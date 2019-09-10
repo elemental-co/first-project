@@ -33,13 +33,13 @@
 				justify-content: space-between;
 				img {
 					width: 175px;
-					visibility: hidden;
 				}
 				.right {
 					display: flex;
 					align-items: center;
 					p {
 						margin: 0;
+						cursor: pointer;
 						font-size: 18px;
 						color: rgba(48, 48, 55, 0.75);
 						font-family: "SF Compact Text Regular", sans-serif;
