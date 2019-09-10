@@ -1,6 +1,8 @@
 @mixin navigation-bar {
 	.navigation-bar {
+		z-index: 1;
 		display: flex;
+		position: relative;
 		justify-content: center;
 		.navigation-bar-extend {
 			flex-grow: 1;
@@ -108,7 +110,6 @@
 			.header-illustration {
 				top: -120px;
 				right: 16px;
-				z-index: -1;
 				position: absolute;
 			}
 		}
@@ -120,6 +121,9 @@
 		height: 850px;
 		display: flex;
 		flex-direction: column;
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-image: url("../../../assets/image/homeHeader4.svg");
 		@include navigation-bar;
 		@include header-content;
 	}
