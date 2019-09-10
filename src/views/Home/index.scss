@@ -1,0 +1,5 @@
+@import "Header/index";
+
+.home-container {
+	@include header-container;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import Loadable from "react-loadable";
 import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
+import "./App.scss";
+
 const Home = Loadable({
   loader: () => import("./Home"),
   loading: () => <React.Fragment/>
