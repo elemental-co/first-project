@@ -4,7 +4,7 @@ import Translator from "Components/Translator";
 
 const Header = () => {
   return(
-    <div className="header-component">
+    <div className="header-container">
       <nav className="navigation-bar">
         <span className="navigation-bar-extend logo-container-extend"/>
         <div className="navigation-bar-main">
@@ -28,6 +28,10 @@ const Header = () => {
             <p><Translator id="home.paas"/></p>
             <p><Translator id="home.transform"/></p>
             <p><Translator id="home.desc"/></p>
+            <button>
+              <Translator id="button.learn"/>
+            </button>
+            <img alt="Illustration" src={require("../../../assets/image/homeHeader5.svg")}/>
           </div>
           <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
         </div>

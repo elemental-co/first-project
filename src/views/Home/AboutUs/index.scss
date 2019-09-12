@@ -1,0 +1,76 @@
+@mixin who-are-we {
+	.who-are-we {
+		display: flex;
+		padding: 0 105px;
+		max-width: 1440px;
+		.left {
+			flex-grow: 1;
+			p {
+				margin: 0;
+				font-family: "Rubik", sans-serif;
+				&:nth-child(1) {
+					color: #A7A9C0;
+					font-size: 24px;
+					font-weight: 500;
+					margin-bottom: 16px;
+				}
+				&:not(:first-child) {
+					color: #303037;
+					font-size: 48px;
+					font-weight: bold;
+					line-height: 125%;
+				}
+			}
+		}
+		.right {
+			$size: 48px;
+			$margin: 30px;
+			width: 470px;
+			box-sizing: border-box;
+			padding-left: $size + $margin;
+			.point-1, .point-2 {
+				p {
+					margin: 0;
+					color: #303037;
+					position: relative;
+				}
+				p:first-child {
+					font-size: 24px;
+					line-height: 160%;
+					font-weight: bold;
+					font-family: "Rubik", sans-serif;
+					&:before {
+						top: 50%;
+						content: "";
+						width: $size;
+						height: $size;
+						position: absolute;
+						border-radius: 50%;
+						left: -$size - $margin;
+						background-color: #E0E0E0;
+						transform: translateY(-50%);
+
+					}
+				}
+				p:last-child {
+					font-size: 18px;
+					margin-top: 16px;
+					line-height: 160%;
+					font-family: "SF Compact Text Regular", sans-serif;
+				}
+			}
+			.point-1 {
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+@mixin about-us-container {
+	.about-us-container {
+		width: 100%;
+		padding-top: 90px;
+		box-sizing: border-box;
+		@include who-are-we;
+	}
+}

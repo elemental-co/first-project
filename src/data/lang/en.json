@@ -1,4 +1,9 @@
 {
+  "text": {
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
   "button": {
     "contact": "Contact Us",
     "learn": "Learn More"
@@ -8,6 +13,18 @@
     "transform": "Transforming Underwriting Process with Big Data and A.I.",
     "desc": "Acura Labs helps financial institutions by providing reliable information for better financial decisions",
     "navbar1": "Who We Are?",
-    "navbar2": "What We Do?"
+    "navbar2": "What We Do?",
+    "whoWeAre": {
+      "header": "Acura Labs Mission",
+      "content": ["We’ve always been", "on a mission to expand", "financial inclusion", "in Indonesia"],
+      "point1": {
+        "header": "Alternative Data",
+        "content": "Low penetration of bank financial product is caused by the lack of data coverage, and we are here to start increasing it."
+      },
+      "point2": {
+        "header": "Automated Process",
+        "content": "Empowering bank in having automated know-your-customer and application process."
+      }
+    }
   }
 }

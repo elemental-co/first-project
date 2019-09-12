@@ -1,5 +1,9 @@
 @import "Header/index";
+@import "AboutUs/index";
+@import "Footer/index";
 
 .home-container {
 	@include header-container;
+	@include about-us-container;
+	@include footer-container;
 }

@@ -1,0 +1,25 @@
+@mixin footer-container {
+	.footer-container {
+		background-color: #313895;
+		.footer-content {
+			width: 100%;
+			display: flex;
+			max-width: 1440px;
+			box-sizing: border-box;
+			padding: 80px 105px 92px 105px;
+			p {
+				font-family: "SF Compact Text Regular", sans-serif;
+			}
+			.footer-title {
+				font-size: 16px;
+				line-height: 140%;
+				color: rgba(255, 255, 255, 0.5);
+			}
+			.footer-text {
+				color: #ffffff;
+				font-size: 20px;
+				line-height: 140%;
+			}
+		}
+	}
+}

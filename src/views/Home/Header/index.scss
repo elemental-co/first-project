@@ -79,8 +79,12 @@
 			max-width: 1440px;
 			position: relative;
 			.header-content-text {
+				z-index: 1;
 				width: 660px;
 				margin-top: 96px;
+				margin-left: 105px;
+				position: relative;
+				padding-bottom: 40px;
 				p {
 					margin: 0;
 					&:nth-child(1) {
@@ -106,6 +110,26 @@
 						font-family: "SF Compact Text Regular", sans-serif;
 					}
 				}
+				button {
+					width: 140px;
+					height: 40px;
+					border: none;
+					outline: none;
+					color: #ffffff;
+					font-size: 14px;
+					cursor: pointer;
+					margin-top: 32px;
+					font-weight: bold;
+					border-radius: 8px;
+					background-color: #F88634;
+					font-family: "SF Compact Text Regular", sans-serif;
+				}
+				img {
+					bottom: 0;
+					left: 108px;
+					z-index: -1;
+					position: absolute;
+				}
 			}
 			.header-illustration {
 				top: -120px;
@@ -117,7 +141,7 @@
 }
 
 @mixin header-container {
-	.header-component {
+	.header-container {
 		height: 850px;
 		display: flex;
 		flex-direction: column;
