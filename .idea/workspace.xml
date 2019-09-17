@@ -5,10 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/lang/id.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/id.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Footer/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Footer/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,11 @@
       <workItem from="1568086946128" duration="15963000" />
       <workItem from="1568169757233" duration="3438000" />
       <workItem from="1568174343623" duration="1956000" />
-      <workItem from="1568264202822" duration="9837000" />
+      <workItem from="1568264202822" duration="10862000" />
+      <workItem from="1568357899256" duration="1278000" />
+      <workItem from="1568372378360" duration="593000" />
+      <workItem from="1568424668680" duration="54000" />
+      <workItem from="1568710498889" duration="2292000" />
     </task>
     <servers />
   </component>

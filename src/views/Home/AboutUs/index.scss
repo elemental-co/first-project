@@ -1,8 +1,10 @@
 @mixin who-are-we {
 	.who-are-we {
+		margin: auto;
 		display: flex;
 		padding: 0 105px;
 		max-width: 1440px;
+		box-sizing: border-box;
 		.left {
 			flex-grow: 1;
 			p {

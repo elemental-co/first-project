@@ -9,6 +9,7 @@
     "learn": "Learn More"
   },
   "home": {
+    "home": "Home",
     "paas": "Profiling as a Service",
     "transform": "Transforming Underwriting Process with Big Data and A.I.",
     "desc": "Acura Labs helps financial institutions by providing reliable information for better financial decisions",
@@ -26,5 +27,8 @@
         "content": "Empowering bank in having automated know-your-customer and application process."
       }
     }
+  },
+  "footer": {
+    "copyright": "Monitored regularly by Otoritas Jasa Keuangan"
   }
 }
