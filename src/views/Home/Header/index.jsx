@@ -1,8 +1,15 @@
-import React from "react";
+import React, {Fragment, useState} from "react";
+import {ResizeSensor} from "css-element-queries";
 
+import {mobile} from "../../../assets/style/_regular.scss"
 import Translator from "Components/Translator";
 
 const Header = () => {
+  const [isMobile, setIsMobile] = useState(null);
+  const body = document.getElementsByTagName("body")[0];
+  new ResizeSensor(body, () => {
+    setIsMobile(body.clientWidth <= parseInt(mobile));
+  });
   return(
     <div className="header-container">
       <nav className="navigation-bar">
@@ -10,14 +17,34 @@ const Header = () => {
         <div className="navigation-bar-main">
           <span className="logo-container"/>
           <div className="navigation-bar-item">
-            <img className="logo-big" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
-            <img className="logo-small" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
+            {isMobile ? (
+              <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
+            ) : (
+              <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
+            )}
             <div className="right">
-              <p><Translator id="home.navbar1"/></p>
-              <p><Translator id="home.navbar2"/></p>
-              <button>
-                <Translator id="button.contact"/>
-              </button>
+              {isMobile ? (
+                <Fragment>
+                  <button className="icon-button">
+                    <img alt="Icon" src={require("../../../assets/image/homeHeader7.svg")}/>
+                  </button>
+                  <button className="icon-button">
+                    <div className="hamburger-menu">
+                      <span/>
+                      <span/>
+                      <span/>
+                    </div>
+                  </button>
+                </Fragment>
+              ) : (
+                <Fragment>
+                  <p><Translator id="home.navbar1"/></p>
+                  <p><Translator id="home.navbar2"/></p>
+                  <button className="contact-button">
+                    <Translator id="button.contact"/>
+                  </button>
+                </Fragment>
+              )}
             </div>
           </div>
         </div>
