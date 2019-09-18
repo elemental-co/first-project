@@ -36,6 +36,9 @@
 				img {
 					width: 175px;
 				}
+				.logo-small {
+					display: none;
+				}
 				.right {
 					display: flex;
 					align-items: center;
@@ -66,6 +69,28 @@
 				}
 			}
 		}
+		@media only screen and (max-width: 425px) {
+			.navigation-bar-main {
+				height: 80px;
+				.logo-container {
+					width: 80px;
+					height: 80px;
+					background-size: cover;
+					background-position: right 0;
+				}
+				.navigation-bar-item {
+					padding: 22px 16px;
+					.logo-big {
+						display: none;
+					}
+					.logo-small {
+						width: 35px;
+						height: 35px;
+						display: block;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -80,11 +105,14 @@
 			position: relative;
 			.header-content-text {
 				z-index: 1;
-				width: 660px;
+				width: 100%;
+				display: flex;
+				max-width: 660px;
 				margin-top: 96px;
 				margin-left: 105px;
 				position: relative;
 				padding-bottom: 40px;
+				flex-direction: column;
 				p {
 					margin: 0;
 					&:nth-child(1) {
@@ -110,31 +138,61 @@
 						font-family: "SF Compact Text Regular", sans-serif;
 					}
 				}
-				button {
-					width: 140px;
-					height: 40px;
-					border: none;
-					outline: none;
-					color: #ffffff;
-					font-size: 14px;
-					cursor: pointer;
+				.button-container {
 					margin-top: 32px;
-					font-weight: bold;
-					border-radius: 8px;
-					background-color: #F88634;
-					font-family: "SF Compact Text Regular", sans-serif;
-				}
-				img {
-					bottom: 0;
-					left: 108px;
-					z-index: -1;
-					position: absolute;
+					position: relative;
+					button {
+						width: 140px;
+						height: 40px;
+						border: none;
+						outline: none;
+						color: #ffffff;
+						font-size: 14px;
+						cursor: pointer;
+						font-weight: bold;
+						border-radius: 8px;
+						background-color: #F88634;
+						font-family: "SF Compact Text Regular", sans-serif;
+					}
+					img {
+						top: 7px;
+						left: 108px;
+						z-index: -1;
+						position: absolute;
+					}
 				}
 			}
 			.header-illustration {
 				top: -120px;
 				right: 16px;
 				position: absolute;
+			}
+		}
+		@media only screen and (max-width: 425px) {
+			.header-content-main {
+				.header-content-text {
+					padding: 0 16px;
+					margin: 80px 0 0 0;
+					box-sizing: border-box;
+					p {
+						text-align: center;
+						&:nth-child(1) {
+							font-size: 18px;
+						}
+						&:nth-child(2) {
+							font-size: 28px;
+						}
+						&:nth-child(3) {
+							width: auto;
+						}
+					}
+					.button-container {
+						align-self: center;
+					}
+				}
+				.header-illustration {
+					display: none;
+				}
 			}
 		}
 	}

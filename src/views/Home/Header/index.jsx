@@ -10,7 +10,8 @@ const Header = () => {
         <div className="navigation-bar-main">
           <span className="logo-container"/>
           <div className="navigation-bar-item">
-            <img alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
+            <img className="logo-big" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
+            <img className="logo-small" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
             <div className="right">
               <p><Translator id="home.navbar1"/></p>
               <p><Translator id="home.navbar2"/></p>
@@ -28,10 +29,12 @@ const Header = () => {
             <p><Translator id="home.paas"/></p>
             <p><Translator id="home.transform"/></p>
             <p><Translator id="home.desc"/></p>
-            <button>
-              <Translator id="button.learn"/>
-            </button>
-            <img alt="Illustration" src={require("../../../assets/image/homeHeader5.svg")}/>
+            <div className="button-container">
+              <button>
+                <Translator id="button.learn"/>
+              </button>
+              <img alt="Illustration" src={require("../../../assets/image/homeHeader5.svg")}/>
+            </div>
           </div>
           <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
         </div>
