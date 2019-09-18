@@ -14,11 +14,11 @@ const AboutUs = () => {
           <p><Translator id="home.whoWeAre.content[3]"/></p>
         </div>
         <div className="right">
-          <div className="point-1">
+          <div className="each-point">
             <p><Translator id="home.whoWeAre.point1.header"/></p>
             <p><Translator id="home.whoWeAre.point1.content"/></p>
           </div>
-          <div className="point-2">
+          <div className="each-point">
             <p><Translator id="home.whoWeAre.point2.header"/></p>
             <p><Translator id="home.whoWeAre.point2.content"/></p>
           </div>
