@@ -11,7 +11,7 @@ const Home = () => {
     <div className="home-container">
       <Header/>
       <AboutUs/>
-      <ContactUs/>
+      {/*<ContactUs/>*/}
       <Footer/>
     </div>
   )

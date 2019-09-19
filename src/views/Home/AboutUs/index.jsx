@@ -24,6 +24,22 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <div className="how-it-works">
+        <p><Translator id="home.aboutUs.intro"/></p>
+        <p><Translator id="home.aboutUs.title"/></p>
+        <p><Translator id="home.aboutUs.subtitle"/></p>
+        <div className="pipeline-works">
+          <div className="each-item">
+            <span className="numeric">1</span>
+          </div>
+          <div className="each-item">
+            <span className="numeric">1</span>
+          </div>
+          <div className="each-item">
+            <span className="numeric">1</span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 };

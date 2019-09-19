@@ -27,6 +27,11 @@
         "content": "Empowering bank in having automated know-your-customer and application process."
       }
     },
+    "aboutUs": {
+      "intro": "How Acura Labs Works",
+      "title": "We Work with User Privacy in Mind",
+      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password."
+    },
     "contactUs": {
       "intro": "Customer? Press? Partner?",
       "title": "We’d Love to Hear from You!",
