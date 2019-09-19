@@ -1,0 +1,56 @@
+@mixin contact-card {
+	.contact-card {
+		border-radius: 8px;
+		padding: 48px 75px;
+		box-sizing: border-box;
+		background-color: #ffffff;
+		box-shadow: 0 40px 80px rgba(27, 30, 78, 0.08);
+		.identity-input {
+			display: flex;
+			input {}
+		}
+		.main-button {
+			margin: auto;
+			width: 140px;
+			height: 40px;
+			border: none;
+			outline: none;
+			display: block;
+			color: #ffffff;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: bold;
+			border-radius: 8px;
+			background-color: #F88634;
+			font-family: "SF Compact Text Regular", sans-serif;
+		}
+	}
+}
+
+@mixin contact-us-container {
+	.contact-us-container {
+		.contact-us-max-width {
+			margin: auto;
+			max-width: 1440px;
+			p {
+				margin: 0;
+			}
+			.intro {
+				color: #A7A9C0;
+				font-size: 24px;
+				font-weight: 500;
+				text-align: center;
+				margin-bottom: 16px;
+				font-family: "Rubik", sans-serif;
+			}
+			.title {
+				color: #303037;
+				font-size: 48px;
+				font-weight: bold;
+				text-align: center;
+				font-family: "Rubik", sans-serif;
+			}
+			@include contact-card;
+		}
+	}
+}

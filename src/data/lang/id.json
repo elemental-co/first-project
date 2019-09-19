@@ -26,6 +26,14 @@
         "header": "Automated Process",
         "content": "Empowering bank in having automated know-your-customer and application process."
       }
+    },
+    "contactUs": {
+      "intro": "Customer? Press? Partner?",
+      "title": "We’d Love to Hear from You!",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "button": "Get In Touch"
     }
   },
   "footer": {
