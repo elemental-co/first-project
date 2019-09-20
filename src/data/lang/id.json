@@ -30,7 +30,19 @@
     "aboutUs": {
       "intro": "How Acura Labs Works",
       "title": "We Work with User Privacy in Mind",
-      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password."
+      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password.",
+      "point1": {
+        "header": "Application",
+        "content": "User will be asked to connect their digital accounts & giving consent for us to access."
+      },
+      "point2": {
+        "header": "Data Processing",
+        "content": "Then Acura Labs will processes the data and generate reports for respective partner."
+      },
+      "point3": {
+        "header": "Approval",
+        "content": "Based on the generated reports, you can use it for loan underwriting and approval decision."
+      }
     },
     "contactUs": {
       "intro": "Customer? Press? Partner?",

@@ -25,18 +25,30 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="how-it-works">
-        <p><Translator id="home.aboutUs.intro"/></p>
-        <p><Translator id="home.aboutUs.title"/></p>
-        <p><Translator id="home.aboutUs.subtitle"/></p>
+        <p className="declaration"><Translator id="home.aboutUs.intro"/></p>
+        <p className="declaration"><Translator id="home.aboutUs.title"/></p>
+        <p className="declaration"><Translator id="home.aboutUs.subtitle"/></p>
         <div className="pipeline-works">
           <div className="each-item">
-            <span className="numeric">1</span>
+            <span className="numeric">
+              <p>1</p>
+            </span>
+            <p className="item-header"><Translator id="home.aboutUs.point1.header"/></p>
+            <p className="item-content"><Translator id="home.aboutUs.point1.content"/></p>
           </div>
           <div className="each-item">
-            <span className="numeric">1</span>
+            <span className="numeric">
+              <p>2</p>
+            </span>
+            <p className="item-header"><Translator id="home.aboutUs.point2.header"/></p>
+            <p className="item-content"><Translator id="home.aboutUs.point2.content"/></p>
           </div>
           <div className="each-item">
-            <span className="numeric">1</span>
+            <span className="numeric">
+              <p>3</p>
+            </span>
+            <p className="item-header"><Translator id="home.aboutUs.point3.header"/></p>
+            <p className="item-content"><Translator id="home.aboutUs.point3.content"/></p>
           </div>
         </div>
       </div>

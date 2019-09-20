@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/src/data/lang/id.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/id.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       <workItem from="1568424668680" duration="54000" />
       <workItem from="1568710498889" duration="7807000" />
       <workItem from="1568780758602" duration="10572000" />
-      <workItem from="1568865281148" duration="12670000" />
+      <workItem from="1568865281148" duration="16632000" />
     </task>
     <servers />
   </component>

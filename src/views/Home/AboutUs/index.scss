@@ -113,7 +113,7 @@
 	.how-it-works {
 		margin: auto;
 		max-width: 1440px;
-		p {
+		.declaration {
 			margin: 0;
 			&:nth-child(1) {
 				color: #A7A9C0;
@@ -165,6 +165,38 @@
 					position: absolute;
 					border-radius: 50%;
 					background-color: #E0E0E0;
+				}
+				.numeric {
+					width: 48px;
+					height: 48px;
+					display: flex;
+					margin: 32px auto;
+					border-radius: 50%;
+					align-items: center;
+					box-sizing: border-box;
+					justify-content: center;
+					border: 2px solid #EEEFF7;
+					p {
+						margin: 0;
+						color: #313896;
+						font-size: 20px;
+						font-family: "Rubik", sans-serif;
+					}
+				}
+				.item-header {
+					font-size: 24px;
+					font-weight: bold;
+					text-align: center;
+					margin-bottom: 16px;
+					font-family: "Rubik", sans-serif;
+				}
+				.item-content {
+					margin: 0;
+					color: #303037;
+					font-size: 18px;
+					line-height: 160%;
+					text-align: center;
+					font-family: "SF Compact Text Regular", sans-serif;
 				}
 			}
 		}
