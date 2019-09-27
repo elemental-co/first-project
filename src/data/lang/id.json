@@ -42,6 +42,18 @@
       "point3": {
         "header": "Approval",
         "content": "Based on the generated reports, you can use it for loan underwriting and approval decision."
+      },
+      "whatWeDo": {
+        "header": "Acura Labs Services",
+        "subtitle": ["Secure, Reliable, and Cheap", "Credit Risk Management for Companies"],
+        "point1": {
+          "header": "Capturing Alternative Data",
+          "content": "We capture alternative data and used machine learning to reach the underserved market."
+        },
+        "point2": {
+          "header": "Digitizing KYC & \nApplication Process",
+          "content": "We automate the verification of personal information, address, and income."
+        }
       }
     },
     "contactUs": {

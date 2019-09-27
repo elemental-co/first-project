@@ -3,10 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="52205d77-c9ab-4392-a191-7ffd0fa4e62a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Translator/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Translator/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/lang/id.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/id.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/ContactUs/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/ContactUs/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +25,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/views/App.jsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/Home/index.jsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/views/App.jsx" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1QafMarx2GXQQWihXbHM6rej8qx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -33,7 +40,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,7 +95,12 @@
       <workItem from="1568424668680" duration="54000" />
       <workItem from="1568710498889" duration="7807000" />
       <workItem from="1568780758602" duration="10572000" />
-      <workItem from="1568865281148" duration="16632000" />
+      <workItem from="1568865281148" duration="17034000" />
+      <workItem from="1568958977631" duration="85000" />
+      <workItem from="1569476872726" duration="3543000" />
+      <workItem from="1569511340501" duration="1272000" />
+      <workItem from="1569549099770" duration="5635000" />
+      <workItem from="1569588676099" duration="1529000" />
     </task>
     <servers />
   </component>
