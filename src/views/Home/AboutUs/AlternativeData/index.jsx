@@ -4,15 +4,31 @@ import Translator from "../../../../components/Translator";
 
 const AlternativeData = () => {
   const [tabs, updateTab] = useState([
-    {id: "banking", label: "Banking", value: true},
-    {id: "riding", label: "Riding", value: false},
-    {id: "shopping", label: "Shopping", value: false},
-    {id: "traveling", label: "Traveling", value: false},
-    {id: "lending", label: "Lending", value: false},
+    {id: "banking", label: "Banking", value: true, content: {
+        logo: [],
+        text: ""
+      }},
+    {id: "riding", label: "Riding", value: false, content: {
+        logo: [],
+        text: ""
+      }},
+    {id: "shopping", label: "Shopping", value: false, content: {
+        logo: [],
+        text: ""
+      }},
+    {id: "traveling", label: "Traveling", value: false, content: {
+        logo: [],
+        text: ""
+      }},
+    {id: "lending", label: "Lending", value: false, content: {
+        logo: [],
+        text: ""
+      }},
   ]);
   const selectTabHandler = id => {
     updateTab(tabs.map(each => ({...each, value: each.id === id})));
   };
+  const activeTabIndex = tabs.map(each => each.value).indexOf(true);
   return(
     <div className="alternative-data">
       <p className="declaration"><Translator id="home.alternativeData.header"/></p>
@@ -20,7 +36,7 @@ const AlternativeData = () => {
       <p className="declaration"><Translator id="home.alternativeData.subtitle"/></p>
       <div className="services-container">
         <div className="tab-nav">
-          <span className="tab-active-pointer" style={{left: `${tabs.map(each => each.value).indexOf(true) * 20}%`}}/>
+          <span className="tab-active-pointer" style={{left: `${activeTabIndex * 20}%`}}/>
           <ul>
             {tabs.map((each, i) => {
               const className = each.value ? {className: "active"} : {};
@@ -33,7 +49,11 @@ const AlternativeData = () => {
           </ul>
         </div>
         <div className="tab-content">
-          <div className="services"></div>
+          <div className="services">
+            <div className="service-image"/>
+            <div className="service-image"/>
+            <div className="service-image"/>
+          </div>
           <div className="captured-data">
             <div className="content">
               <p><Translator id="home.alternativeData.capturedData"/></p>

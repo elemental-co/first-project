@@ -76,13 +76,21 @@
 					height: 176px;
 					display: flex;
 					max-width: 990px;
-					padding: 64px 48px;
 					border-radius: 8px;
 					position: relative;
 					box-sizing: border-box;
 					margin: 80px auto 0 auto;
 					background-color: #ffffff;
 					box-shadow: 0 40px 80px rgba(27, 30, 78, 0.08);
+					.service-image {
+						flex-grow: 1;
+						box-sizing: border-box;
+						&:not(:last-child) {
+							border-right: 1px solid #EEEEEE;
+						}
+						//&:nth-child(odd):last-child {
+						//}
+					}
 				}
 				.captured-data {
 					max-width: 895px;
