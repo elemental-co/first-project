@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
+import {ResizeSensor} from "css-element-queries";
 
 import Translator from "Components/Translator";
+import AlternativeData from "./AlternativeData";
 
 const AboutUs = () => {
+  const [isDesktop, setScreenState] = useState(null);
+  new ResizeSensor(document.getElementsByTagName("html")[0], () => {
+    setScreenState(window.innerWidth >= 1024);
+  });
   return(
     <div className="about-us-container">
       <div className="who-are-we">
@@ -25,6 +31,11 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="what-we-do">
+        {isDesktop !== null
+          ? isDesktop
+            ? <img src={require("../../../assets/image/homeAbout1.svg")} alt="Background"/>
+            : <img src={require("../../../assets/image/homeAbout2.svg")} alt="Background"/>
+          : null}
         <div className="header">
           <p className="title"><Translator id="home.aboutUs.whatWeDo.header"/></p>
           <div className="subtitle">
@@ -44,6 +55,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <AlternativeData/>
       <div className="how-it-works">
         <p className="declaration"><Translator id="home.aboutUs.intro"/></p>
         <p className="declaration"><Translator id="home.aboutUs.title"/></p>
