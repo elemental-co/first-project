@@ -1,8 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52205d77-c9ab-4392-a191-7ffd0fa4e62a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/_regular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/_regular.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/lang/id.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/id.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.scss" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/views/Home/index.jsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/views/App.jsx" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1QafMarx2GXQQWihXbHM6rej8qx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52205d77-c9ab-4392-a191-7ffd0fa4e62a" name="Default Changelist" comment="" />
+      <created>1568013580482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568013580482</updated>
+      <workItem from="1568013581763" duration="1760000" />
+      <workItem from="1568027969318" duration="1915000" />
+      <workItem from="1568086946128" duration="15963000" />
+      <workItem from="1568169757233" duration="3438000" />
+      <workItem from="1568174343623" duration="1956000" />
+      <workItem from="1568264202822" duration="10862000" />
+      <workItem from="1568357899256" duration="1278000" />
+      <workItem from="1568372378360" duration="593000" />
+      <workItem from="1568424668680" duration="54000" />
+      <workItem from="1568710498889" duration="7807000" />
+      <workItem from="1568780758602" duration="10572000" />
+      <workItem from="1568865281148" duration="17034000" />
+      <workItem from="1568958977631" duration="85000" />
+      <workItem from="1569476872726" duration="3543000" />
+      <workItem from="1569511340501" duration="1272000" />
+      <workItem from="1569549099770" duration="5635000" />
+      <workItem from="1569588676099" duration="1921000" />
+      <workItem from="1569752133108" duration="31273000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

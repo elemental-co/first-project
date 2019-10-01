@@ -1,0 +1,101 @@
+{
+  "text": {
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "button": {
+    "contact": "Contact Us",
+    "learn": "Learn More"
+  },
+  "home": {
+    "home": "Home",
+    "contextMenu": {
+      "whoWeAre": "Who We Are?",
+      "whatWeDo": "What We Do?"
+    },
+    "paas": "Profiling as a Service",
+    "transform": "Transforming Underwriting Process with Big Data and A.I.",
+    "desc": "Acura Labs helps financial institutions by providing reliable information for better financial decisions",
+    "navbar1": "Who We Are?",
+    "navbar2": "What We Do?",
+    "whoWeAre": {
+      "header": "Acura Labs Mission",
+      "content": ["We’ve always been", "on a mission to expand", "financial inclusion", "in Indonesia"],
+      "point1": {
+        "header": "Alternative Data",
+        "content": "Low penetration of bank financial product is caused by the lack of data coverage, and we are here to start increasing it."
+      },
+      "point2": {
+        "header": "Automated Process",
+        "content": "Empowering bank in having automated know-your-customer and application process."
+      }
+    },
+    "aboutUs": {
+      "intro": "How Acura Labs Works",
+      "title": "We Work with User Privacy in Mind",
+      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password.",
+      "point1": {
+        "header": "Application",
+        "content": "User will be asked to connect their digital accounts & giving consent for us to access."
+      },
+      "point2": {
+        "header": "Data Processing",
+        "content": "Then Acura Labs will processes the data and generate reports for respective partner."
+      },
+      "point3": {
+        "header": "Approval",
+        "content": "Based on the generated reports, you can use it for loan underwriting and approval decision."
+      },
+      "whatWeDo": {
+        "header": "Acura Labs Services",
+        "subtitle": ["Secure, Reliable, and Cheap", "Credit Risk Management for Companies"],
+        "point1": {
+          "header": "Capturing Alternative Data",
+          "content": "We capture alternative data and used machine learning to reach the underserved market."
+        },
+        "point2": {
+          "header": "Digitizing KYC & \nApplication Process",
+          "content": "We automate the verification of personal information, address, and income."
+        }
+      }
+    },
+    "alternativeData": {
+      "header": "Capturing Alternative Data",
+      "title": "Alternative Data for Better Financial Decision",
+      "subtitle": "Our data layer engine help financial institutions and business partners to reduce risk by providing individuals daily transactional data",
+      "capturedData": "Captured Data",
+      "point1": {
+        "header": "Banking",
+        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      },
+      "point2": {
+        "header": "Riding",
+        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      },
+      "point3": {
+        "header": "Shopping",
+        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      },
+      "point4": {
+        "header": "Traveling",
+        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      },
+      "point5": {
+        "header": "Lending",
+        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      }
+    },
+    "contactUs": {
+      "intro": "Customer? Press? Partner?",
+      "title": "We’d Love to Hear from You!",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "button": "Get In Touch"
+    }
+  },
+  "footer": {
+    "copyright": "Monitored regularly by Otoritas Jasa Keuangan"
+  }
+}

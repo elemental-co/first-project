@@ -1,0 +1,332 @@
+@import "../../../assets/style/regular";
+@import "./AlternativeData/index";
+
+@mixin who-are-we {
+	.who-are-we {
+		margin: auto;
+		display: flex;
+		padding: 0 105px;
+		max-width: 1440px;
+		box-sizing: border-box;
+		.left {
+			flex-grow: 1;
+			p {
+				margin: 0;
+				font-family: "Rubik", sans-serif;
+				&:nth-child(1) {
+					color: #A7A9C0;
+					font-size: 24px;
+					font-weight: 500;
+					margin-bottom: 16px;
+				}
+				&:not(:first-child) {
+					color: #303037;
+					font-size: 48px;
+					font-weight: bold;
+					line-height: 125%;
+				}
+			}
+		}
+		.right {
+			$size: 48px;
+			$margin: 30px;
+			width: 100%;
+			max-width: 470px;
+			box-sizing: border-box;
+			padding-left: $size + $margin;
+			.each-point {
+				p {
+					margin: 0;
+					color: #303037;
+					position: relative;
+					&:first-child {
+						font-size: 24px;
+						line-height: 160%;
+						font-weight: bold;
+						font-family: "Rubik", sans-serif;
+						&:before {
+							top: 50%;
+							content: "";
+							width: $size;
+							height: $size;
+							position: absolute;
+							border-radius: 50%;
+							left: -$size - $margin;
+							background-color: #E0E0E0;
+							transform: translateY(-50%);
+						}
+					}
+					&:last-child {
+						font-size: 18px;
+						margin-top: 16px;
+						line-height: 160%;
+						font-family: "SF Compact Text Regular", sans-serif;
+					}
+				}
+				&:first-child {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: $mobile) {
+		.who-are-we {
+			padding: 0 16px;
+			flex-direction: column;
+			.left p {
+				text-align: center;
+				&:nth-child(1) {
+					font-size: 18px;
+				}
+				&:not(:first-child) {
+					font-size: 28px;
+				}
+			}
+			.right {
+				$size: 40px;
+				$margin: 24px;
+				margin-top: 70px;
+				padding-left: $size + $margin;
+				.each-point {
+					p {
+						&:first-child {
+							font-size: 18px;
+							&::before {
+								width: $size;
+								height: $size;
+								left: -$size - $margin;
+							}
+						}
+						&:last-child {
+							margin-top: 24px;
+						}
+					}
+					&:last-child {
+						margin-bottom: 38px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin what-we-do {
+	.what-we-do {
+		position: relative;
+		padding: 140px 0 500px 0;
+		img {
+			top: 0;
+			left: 50%;
+			position: absolute;
+			transform: translateX(-45.5%);
+		}
+		.header {
+			position: relative;
+			p {
+				margin: 0;
+			}
+			.title {
+				color: #00D7FE;
+				font-size: 24px;
+				font-weight: 500;
+				text-align: center;
+				font-family: "Rubik", sans-serif;
+			}
+			.subtitle {
+				margin-top: 16px;
+				margin-bottom: 80px;
+				p {
+					color: #FFFFFF;
+					font-size: 48px;
+					font-weight: bold;
+					line-height: 125%;
+					text-align: center;
+					font-family: "Rubik", sans-serif;
+				}
+			}
+		}
+		.content {
+			display: flex;
+			position: relative;
+			flex-direction: row;
+			justify-content: center;
+			.content-card {
+				width: 100%;
+				height: 100%;
+				max-width: 600px;
+				max-height: 275px;
+				align-self: center;
+				border-radius: 8px;
+				box-sizing: border-box;
+				background-color: #ffffff;
+				padding: 40px 105px 47px 105px;
+				box-shadow: 0 40px 80px rgba(27, 30, 78, 0.08);
+				&:first-child {
+					margin-right: 15px;
+				}
+				&:last-child {
+					margin-left: 15px;
+				}
+				p {
+					margin: 0;
+				}
+				.header {
+					width: 100%;
+					color: #303037;
+					font-size: 36px;
+					max-width: 370px;
+					font-weight: bold;
+					line-height: 125%;
+					text-align: center;
+					font-family: "Rubik", sans-serif;
+				}
+				.content {
+					width: 100%;
+					color: #303037;
+					font-size: 18px;
+					max-width: 380px;
+					margin-top: 40px;
+					line-height: 160%;
+					text-align: center;
+					font-family: "SF Compact Text Regular", sans-serif;
+				}
+			}
+		}
+	}
+}
+
+@mixin how-it-works {
+	.how-it-works {
+		max-width: 1440px;
+		margin: 0 auto 236px auto;
+		.declaration {
+			margin: 0;
+			&:nth-child(1) {
+				color: #A7A9C0;
+				font-size: 24px;
+				font-weight: 500;
+				text-align: center;
+				font-family: "Rubik", sans-serif;
+			}
+			&:nth-child(2) {
+				color: #303037;
+				font-size: 48px;
+				font-weight: bold;
+				text-align: center;
+				margin: 16px auto 32px auto;
+				font-family: "Rubik", sans-serif;
+			}
+			&:nth-child(3) {
+				margin: auto;
+				color: #303037;
+				font-size: 20px;
+				max-width: 600px;
+				line-height: 160%;
+				text-align: center;
+				font-family: "SF Compact Text Regular", sans-serif;
+			}
+		}
+		.pipeline-works {
+			display: flex;
+			margin-top: 80px;
+			flex-direction: row;
+			justify-content: center;
+			.each-item {
+				$size: 64px;
+				width: 100%;
+				max-width: 390px;
+				position: relative;
+				padding-top: $size;
+				&:nth-child(2) {
+					.numeric-container hr {
+						width: 100%;
+					}
+					.item-content {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+				}
+				&:nth-child(1) .numeric-container hr {
+					right: 0;
+				}
+				&::before {
+					top: 0;
+					left: 0;
+					right: 0;
+					content: "";
+					margin: auto;
+					width: $size;
+					height: $size;
+					position: absolute;
+					border-radius: 50%;
+					background-color: #E0E0E0;
+				}
+				.numeric-container {
+					overflow: auto;
+					position: relative;
+					hr {
+						top: 0;
+						bottom: 0;
+						height: 2px;
+						margin: auto;
+						border: none;
+						position: absolute;
+						width: calc(50% - 36px);
+						background-color: #EEEFF7;
+					}
+					.numeric {
+						width: 48px;
+						height: 48px;
+						display: flex;
+						margin: 32px auto;
+						border-radius: 50%;
+						position: relative;
+						align-items: center;
+						box-sizing: border-box;
+						justify-content: center;
+						border: 2px solid #EEEFF7;
+						background-color: #ffffff;
+						p {
+							margin: 0;
+							color: #313896;
+							font-size: 20px;
+							font-family: "Rubik", sans-serif;
+						}
+					}
+				}
+				.item-header {
+					font-size: 24px;
+					font-weight: bold;
+					text-align: center;
+					margin-bottom: 16px;
+					font-family: "Rubik", sans-serif;
+				}
+				.item-content {
+					margin: 0;
+					color: #303037;
+					font-size: 18px;
+					line-height: 160%;
+					text-align: center;
+					font-family: "SF Compact Text Regular", sans-serif;
+				}
+			}
+		}
+	}
+}
+
+@mixin about-us-container {
+	.about-us-container {
+		width: 100%;
+		padding-top: 90px;
+		box-sizing: border-box;
+		@include who-are-we;
+		@include what-we-do;
+		@include alternative-data;
+		@include how-it-works;
+	}
+	@media only screen and (max-width: $mobile) {
+		.about-us-container {
+			padding-top: 40px;
+		}
+	}
+}
