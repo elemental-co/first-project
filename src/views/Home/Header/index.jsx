@@ -1,15 +1,24 @@
 import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
-import {mobile} from "../../../assets/style/_regular.scss"
+import {tablet, desktopLg} from "../../../assets/style/_regular.scss"
 import Translator from "Components/Translator";
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(null);
-  const body = document.getElementsByTagName("body")[0];
-  new ResizeSensor(body, () => {
-    setIsMobile(body.clientWidth <= parseInt(mobile));
+  const [screenResolution, setScreenResolution] = useState(null);
+  const [contextMenuState, setContextMenuState] = useState(false);
+  new ResizeSensor(document.getElementsByTagName("body")[0], () => {
+    setScreenResolution(window.innerWidth);
   });
+  const toggleContextMenu = () => {
+    if(contextMenuState){
+      document.getElementsByTagName("html")[0].removeAttribute("style");
+    }else{
+      document.getElementsByTagName("html")[0].style.overflow = "hidden";
+    }
+    setContextMenuState(!contextMenuState);
+  };
+  const contextClassname = contextMenuState ? {style: {opacity: 1, visibility: "visible"}} : {};
   return(
     <div className="header-container">
       <nav className="navigation-bar">
@@ -17,19 +26,19 @@ const Header = () => {
         <div className="navigation-bar-main">
           <span className="logo-container"/>
           <div className="navigation-bar-item">
-            {isMobile ? (
+            {screenResolution <= parseInt(tablet) ? (
               <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
             ) : (
               <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
             )}
             <div className="right">
-              {isMobile ? (
+              {screenResolution <= parseInt(tablet) ? (
                 <Fragment>
                   <button className="icon-button">
                     <img alt="Icon" src={require("../../../assets/image/homeHeader7.svg")}/>
                   </button>
-                  <button className="icon-button">
-                    <div className="hamburger-menu">
+                  <button className="icon-button" onClick={toggleContextMenu}>
+                    <div className={contextMenuState ? "hamburger-menu context-active" : "hamburger-menu"}>
                       <span/>
                       <span/>
                       <span/>
@@ -50,6 +59,16 @@ const Header = () => {
         </div>
         <span className="navigation-bar-extend"/>
       </nav>
+      {screenResolution <= parseInt(tablet)
+        ? (
+          <div className="mobile-context-menu" {...contextClassname}>
+            <div className="context-content">
+              <p><Translator id="home.contextMenu.whoWeAre"/></p>
+              <hr/>
+              <p><Translator id="home.contextMenu.whatWeDo"/></p>
+            </div>
+          </div>
+        ) : null}
       <div className="header-content">
         <div className="header-content-main">
           <div className="header-content-text">
@@ -63,7 +82,9 @@ const Header = () => {
               <img alt="Illustration" src={require("../../../assets/image/homeHeader5.svg")}/>
             </div>
           </div>
-          <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
+          {screenResolution >= parseInt(desktopLg)
+            ? <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
+            : null}
         </div>
       </div>
     </div>

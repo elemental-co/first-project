@@ -3,6 +3,7 @@
 @import "Footer/index";
 
 .home-container {
+	min-height: 100%;
 	@include header-container;
 	@include about-us-container;
 	@include footer-container;

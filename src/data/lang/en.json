@@ -10,6 +10,10 @@
   },
   "home": {
     "home": "Home",
+    "contextMenu": {
+      "whoWeAre": "Who We Are?",
+      "whatWeDo": "What We Do?"
+    },
     "paas": "Profiling as a Service",
     "transform": "Transforming Underwriting Process with Big Data and A.I.",
     "desc": "Acura Labs helps financial institutions by providing reliable information for better financial decisions",

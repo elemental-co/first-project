@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="52205d77-c9ab-4392-a191-7ffd0fa4e62a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/_regular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/_regular.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/lang/id.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/id.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +98,7 @@
       <workItem from="1569511340501" duration="1272000" />
       <workItem from="1569549099770" duration="5635000" />
       <workItem from="1569588676099" duration="1921000" />
-      <workItem from="1569752133108" duration="19305000" />
+      <workItem from="1569752133108" duration="31273000" />
     </task>
     <servers />
   </component>

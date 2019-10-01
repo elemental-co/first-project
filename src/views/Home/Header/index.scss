@@ -23,7 +23,6 @@
 			.logo-container {
 				top: 0;
 				left: 0;
-				z-index: -1;
 				width: 390px;
 				height: 100%;
 				display: block;
@@ -32,6 +31,7 @@
 			}
 			.navigation-bar-item {
 				display: flex;
+				position: relative;
 				padding: 40px 105px;
 				box-sizing: border-box;
 				justify-content: space-between;
@@ -70,10 +70,23 @@
 								display: block;
 								margin-left: auto;
 								margin-right: auto;
+								transition-duration: 0.3s;
 								background-color: #313896;
 								&:nth-child(2) {
 									margin: 6px auto;
 								}
+							}
+						}
+						.context-active span {
+							&:nth-child(1) {
+								transform: rotateZ(45deg) translateX(6px) translateY(5.3px);
+							}
+							&:nth-child(2) {
+								opacity: 0;
+								visibility: hidden;
+							}
+							&:nth-child(3) {
+								transform: rotateZ(-45deg) translateX(6px) translateY(-5.3px);
 							}
 						}
 					}
@@ -94,9 +107,10 @@
 				}
 			}
 		}
-		@media only screen and (max-width: $mobile) {
+		@media only screen and (max-width: $tablet) {
 			.navigation-bar-main {
 				height: 80px;
+				background-color: #ffffff;
 				.logo-container {
 					width: 80px;
 					height: 80px;
@@ -110,6 +124,47 @@
 						height: 35px;
 					}
 				}
+			}
+		}
+	}
+}
+
+@mixin mobile-context-menu {
+	.mobile-context-menu {
+		bottom: 0;
+		z-index: 2;
+		opacity: 0;
+		width: 100%;
+		visibility: hidden;
+		position: absolute;
+		height: calc(100% - 80px);
+		transition-duration: 0.3s;
+		background-color: rgba(#656565, 0.5);
+		.context-content {
+			top: 0;
+			width: 100%;
+			height: 172px;
+			display: flex;
+			position: absolute;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #ffffff;
+			border-radius: 0 0 8px 8px;
+			hr {
+				height: 2px;
+				width: 100px;
+				border: none;
+				margin: 16px auto;
+				background-color: #EEEEEE;
+			}
+			p {
+				margin: 0 auto;
+				color: #303037;
+				cursor: pointer;
+				font-size: 24px;
+				text-align: center;
+				display: inline-block;
+				font-family: "Rubik", sans-serif;
 			}
 		}
 	}
@@ -190,7 +245,7 @@
 				position: absolute;
 			}
 		}
-		@media only screen and (max-width: $mobile) {
+		@media only screen and (max-width: $tablet) {
 			.header-content-main {
 				height: 456px;
 				.header-content-text {
@@ -237,6 +292,12 @@
 			}
 		}
 		@include navigation-bar;
+		@include mobile-context-menu;
 		@include header-content;
+	}
+	@media only screen and (max-width: 425px) {
+		.header-container {
+			height: 724px;
+		}
 	}
 }
