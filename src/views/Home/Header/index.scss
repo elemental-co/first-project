@@ -84,6 +84,7 @@
 							&:nth-child(2) {
 								opacity: 0;
 								visibility: hidden;
+								transform: translateX(50%);
 							}
 							&:nth-child(3) {
 								transform: rotateZ(-45deg) translateX(6px) translateY(-5.3px);
@@ -107,7 +108,7 @@
 				}
 			}
 		}
-		@media only screen and (max-width: $tablet) {
+		@media only screen and (max-width: $mobile) {
 			.navigation-bar-main {
 				height: 80px;
 				background-color: #ffffff;
@@ -166,6 +167,11 @@
 				display: inline-block;
 				font-family: "Rubik", sans-serif;
 			}
+		}
+	}
+	@media only screen and (min-width: $tablet) {
+		.mobile-context-menu {
+			height: calc(100% - 120px);
 		}
 	}
 }
@@ -246,6 +252,30 @@
 			}
 		}
 		@media only screen and (max-width: $tablet) {
+			.header-content-main .header-content-text {
+				margin-left: auto;
+				margin-right: auto;
+				p {
+					text-align: center;
+					&:nth-child(2) {
+						font-size: 50px;
+					}
+					&:nth-child(3) {
+						margin: auto;
+					}
+				}
+				.button-container {
+					text-align: center;
+					img {
+						left: 0;
+						right: 0;
+						margin: auto;
+						transform: translateX(-135px);
+					}
+				}
+			}
+		}
+		@media only screen and (max-width: $mobile) {
 			.header-content-main {
 				height: 456px;
 				.header-content-text {
@@ -295,7 +325,12 @@
 		@include mobile-context-menu;
 		@include header-content;
 	}
-	@media only screen and (max-width: 425px) {
+	@media only screen and (max-width: $tablet) {
+		.header-container {
+			background-position: top -40px left;
+		}
+	}
+	@media only screen and (max-width: $mobile) {
 		.header-container {
 			height: 724px;
 		}
