@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
-import {mobile, tablet, desktopLg} from "../../../assets/style/_regular.scss"
+import {mobile, tablet, desktopLg} from "../../../assets/style/_regular.scss";
 import Translator from "Components/Translator";
 
 const Header = () => {

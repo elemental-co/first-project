@@ -70,12 +70,16 @@
 		}
 	}
 	@media only screen and (max-width: $tablet) {
-		
+		.who-are-we {
+			flex-direction: column;
+			.left p {
+				text-align: center;
+			}
+		}
 	}
 	@media only screen and (max-width: $mobile) {
 		.who-are-we {
 			padding: 0 16px;
-			flex-direction: column;
 			.left p {
 				text-align: center;
 				&:nth-child(1) {
