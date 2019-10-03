@@ -71,15 +71,15 @@
       },
       "point2": {
         "header": "Riding",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        "content": "Customer Info, Transaction Details, Go-Pay History, Bank Account Registered, Go-Points"
       },
       "point3": {
         "header": "Shopping",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        "content": "Transaction Details, Payment Method, Shipping Address, Bank Account Registered, Rating/Review/Comment"
       },
       "point4": {
         "header": "Traveling",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        "content": "Flight Info, Hotel Info, Payment Method, Traveloka Pay, Points & Rewards"
       },
       "point5": {
         "header": "Many More...",

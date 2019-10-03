@@ -37,6 +37,7 @@ const AlternativeData = () => {
   new ResizeSensor(document.getElementsByTagName("html")[0], () => {
     setScreenResolution(window.innerWidth);
   });
+  const activeTab = tabs.filter(({value}) => value)[0];
   return(
     <div className="alternative-data">
       <p className="declaration"><Translator id="home.alternativeData.header"/></p>
@@ -60,22 +61,24 @@ const AlternativeData = () => {
             </div>
             <div className="tab-content">
               <div className="services">
-                <div className="service-image"/>
-                <div className="service-image"/>
-                <div className="service-image"/>
-              </div>
-              <div className="captured-data">
-                <div className="content">
-                  <p><Translator id="home.alternativeData.capturedData"/></p>
-                  <hr/>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus enim libero, porta maximus risus semper ut.</p>
+                <div className="images">
+                  {activeTab.content.logo.map((each, i) => {
+                    return (
+                      <div key={i} imageWidth={`1/${activeTab.content.logo.length}`}>
+                        <img src={require(`../../../../assets/logo/${each}`)} alt="Logo"/>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
+              <div className="captured-data"></div>
             </div>
           </Fragment>
         ) : (
           <ul className="accordion-nav">
             {tabs.map((each, i) => {
+              const servicesCount = each.content.logo.length;
+              const verticalLine = servicesCount > 2 && servicesCount % 2 === 1 ? Math.ceil(servicesCount / 2) : 0;
               return (
                 <li key={i}>
                   <div
@@ -87,21 +90,26 @@ const AlternativeData = () => {
                   </div>
                   <div className={each.value ? "accordion-body body-active" : "accordion-body"}>
                     <div className="services">
-                      {each.content.logo.length >= 2 ? <hr className="vertical"/> : null}
-                      {each.content.logo.length >= 3 ? <hr className="horizontal"/> : null}
-                      {each.content.logo.map((eachService, j) => {
-                        const servicesCount = each.content.logo.length;
-                        const eachServiceClassname = servicesCount > 1 && servicesCount > 2 && servicesCount !== 3
-                          ? "each-service"
-                          : "each-service full-width";
-                        return (
-                          <div className={eachServiceClassname} key={j}>
-                            <img src={require(`../../../../assets/logo/${eachService}`)} alt="Logo"/>
-                          </div>
-                        )
-                      })}
+                      {servicesCount >= 2 ? <hr className="vertical" style={{height: `${100 / verticalLine}%`}}/> : null}
+                      {servicesCount >= 3 ? <hr className="horizontal"/> : null}
+                      <div className="images">
+                        {each.content.logo.map((eachService, j) => {
+                          const eachServiceClassname = servicesCount > 1
+                            ? "each-service"
+                            : "each-service full-width";
+                          return (
+                            <div className={eachServiceClassname} key={j}>
+                              <img src={require(`../../../../assets/logo/${eachService}`)} alt="Logo"/>
+                            </div>
+                          )
+                        })}
+                      </div>
                     </div>
-                    <div className="captured-data"></div>
+                    <div className="captured-data">
+                      <p className="header"><Translator id="home.alternativeData.capturedData"/></p>
+                      <hr/>
+                      <p className="content"><Translator id={each.content.text}/></p>
+                    </div>
                   </div>
                 </li>
               )

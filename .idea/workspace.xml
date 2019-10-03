@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52205d77-c9ab-4392-a191-7ffd0fa4e62a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/lang/id.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/id.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/AlternativeData/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +98,8 @@
       <workItem from="1569752133108" duration="37576000" />
       <workItem from="1569983707038" duration="2275000" />
       <workItem from="1569988758882" duration="1303000" />
-      <workItem from="1569992689230" duration="12322000" />
+      <workItem from="1569992689230" duration="13859000" />
+      <workItem from="1570074218871" duration="6268000" />
     </task>
     <servers />
   </component>
