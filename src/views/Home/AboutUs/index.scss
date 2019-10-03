@@ -72,8 +72,14 @@
 	@media only screen and (max-width: $tablet) {
 		.who-are-we {
 			flex-direction: column;
-			.left p {
-				text-align: center;
+			.left {
+				margin-bottom: 64px;
+				p {
+					text-align: center;
+				}
+			}
+			.right {
+				max-width: 550px;
 			}
 		}
 	}

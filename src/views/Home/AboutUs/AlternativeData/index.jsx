@@ -59,19 +59,23 @@ const AlternativeData = () => {
                 })}
               </ul>
             </div>
-            <div className="tab-content">
+            <div className={activeTab.content.logo.length <= 2 ? "tab-content content-sm" : "tab-content"}>
               <div className="services">
                 <div className="images">
                   {activeTab.content.logo.map((each, i) => {
                     return (
-                      <div key={i} imageWidth={`1/${activeTab.content.logo.length}`}>
+                      <div key={i} image-width={`1/${activeTab.content.logo.length}`}>
                         <img src={require(`../../../../assets/logo/${each}`)} alt="Logo"/>
                       </div>
                     )
                   })}
                 </div>
               </div>
-              <div className="captured-data"></div>
+              <div className="captured-data">
+                <p className="header"><Translator id="home.alternativeData.capturedData"/></p>
+                <hr/>
+                <p className="content"><Translator id={activeTab.content.text}/></p>
+              </div>
             </div>
           </Fragment>
         ) : (
