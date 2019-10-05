@@ -313,15 +313,26 @@
 		}
 	}
 	@media only screen and (max-width: $tablet) {
-		.alternative-data .services-container .accordion-nav li .accordion-body {
-			max-width: 558px;
-			.captured-data {
-				max-width: 490px;
-				hr {
-					width: 235px;
+		.alternative-data {
+			.declaration {
+				&:nth-child(2) {
+					max-width: 558px;
+					margin: 0 auto 48px auto;
 				}
-				.content {
-					max-width: 416px;
+				&:nth-child(3) {
+					max-width: 558px;
+				}
+			}
+			.services-container .accordion-nav li .accordion-body {
+				max-width: 558px;
+				.captured-data {
+					max-width: 490px;
+					hr {
+						width: 235px;
+					}
+					.content {
+						max-width: 416px;
+					}
 				}
 			}
 		}
