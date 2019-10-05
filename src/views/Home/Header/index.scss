@@ -303,6 +303,10 @@
 					}
 					.button-container {
 						align-self: center;
+						img {
+							left: unset;
+							right: -174px;
+						}
 					}
 				}
 				.header-illustration {
