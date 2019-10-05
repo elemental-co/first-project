@@ -32,7 +32,7 @@
       }
     },
     "aboutUs": {
-      "intro": "How Acura Labs Works",
+      "intro": "Digitizing Application Process",
       "title": "We Work with User Privacy in Mind",
       "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password.",
       "point1": {
@@ -71,18 +71,18 @@
       },
       "point2": {
         "header": "Riding",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        "content": "Customer Info, Transaction Details, Go-Pay History, Bank Account Registered, Go-Points"
       },
       "point3": {
         "header": "Shopping",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        "content": "Transaction Details, Payment Method, Shipping Address, Bank Account Registered, Rating/Review/Comment"
       },
       "point4": {
         "header": "Traveling",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        "content": "Flight Info, Hotel Info, Payment Method, Traveloka Pay, Points & Rewards"
       },
       "point5": {
-        "header": "Lending",
+        "header": "Many More...",
         "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
       }
     },

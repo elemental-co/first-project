@@ -1,3 +1,5 @@
+@import "../../../assets/style/regular";
+
 @mixin footer-container {
 	.footer-container {
 		background-color: #313895;
@@ -33,6 +35,7 @@
 					color: #ffffff;
 					font-size: 20px;
 					line-height: 140%;
+					font-weight: bold;
 				}
 				.sitemap {
 					margin-top: 64px;
@@ -50,6 +53,54 @@
 					font-size: 16px;
 					margin-top: 64px;
 					color: rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: $tablet) {
+		.footer-container .footer-content {
+			max-width: 344px;
+			padding: 64px 0 80px 0;
+			flex-direction: column;
+			.left, .center, .right {
+				margin-right: 0;
+				p {
+					text-align: center;
+				}
+				img {
+					margin: auto;
+				}
+				.footer-text {
+					line-height: 140%;
+				}
+				.sitemap-small {
+					display: flex;
+					color: #FFFFFF;
+					margin: 80px 0 40px 0;
+					justify-content: center;
+					p {
+						display: block;
+						font-size: 16px;
+						font-family: "SF Compact Text Regular", sans-serif;
+						&:first-child {
+							margin-right: 8px;
+						}
+						&:nth-child(2) {
+							margin: 0 8px;
+						}
+						&:last-child {
+							margin-left: 8px;
+						}
+					}
+				}
+				.copyright {
+					max-width: 280px;
+					line-height: 140%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				&:not(:last-child) {
+					margin-bottom: 40px;
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
-import {tablet, desktopLg} from "../../../assets/style/_regular.scss"
+import {mobile, tablet, desktopLg} from "../../../assets/style/_regular.scss";
 import Translator from "Components/Translator";
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
         <div className="navigation-bar-main">
           <span className="logo-container"/>
           <div className="navigation-bar-item">
-            {screenResolution <= parseInt(tablet) ? (
+            {screenResolution <= parseInt(mobile) ? (
               <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
             ) : (
               <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
@@ -67,6 +67,7 @@ const Header = () => {
               <hr/>
               <p><Translator id="home.contextMenu.whatWeDo"/></p>
             </div>
+            <span className="foreground-layer" onClick={toggleContextMenu}/>
           </div>
         ) : null}
       <div className="header-content">

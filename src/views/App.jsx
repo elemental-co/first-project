@@ -1,6 +1,8 @@
 import React from "react";
 import Loadable from "react-loadable";
 import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/js/all.min";
 
 import "./App.scss";
 

@@ -1,14 +1,20 @@
 import React, {useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
+import {mobile, tablet} from "../../../assets/style/_regular.scss";
 import Translator from "Components/Translator";
 import AlternativeData from "./AlternativeData";
 
 const AboutUs = () => {
-  const [isDesktop, setScreenState] = useState(null);
+  const [screenResolution, setScreenResolution] = useState(null);
   new ResizeSensor(document.getElementsByTagName("html")[0], () => {
-    setScreenState(window.innerWidth >= 1024);
+    setScreenResolution(window.innerWidth);
   });
+  const howItWorks = [
+    {header: "home.aboutUs.point1.header", content: "home.aboutUs.point1.content"},
+    {header: "home.aboutUs.point2.header", content: "home.aboutUs.point2.content"},
+    {header: "home.aboutUs.point3.header", content: "home.aboutUs.point3.content"}
+  ];
   return(
     <div className="about-us-container">
       <div className="who-are-we">
@@ -31,17 +37,17 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="what-we-do">
-        {isDesktop !== null
-          ? isDesktop
-            ? <img src={require("../../../assets/image/homeAbout1.svg")} alt="Background"/>
-            : <img src={require("../../../assets/image/homeAbout2.svg")} alt="Background"/>
-          : null}
+        {screenResolution > parseInt(mobile)
+          ? <img src={require("../../../assets/image/homeAbout1.svg")} alt="Background"/>
+          : <img src={require("../../../assets/image/homeAbout2.svg")} alt="Background"/>}
         <div className="header">
           <p className="title"><Translator id="home.aboutUs.whatWeDo.header"/></p>
           <div className="subtitle">
-            {Translator("home.aboutUs.whatWeDo.subtitle").map((each, i) => (
+            {screenResolution > parseInt(tablet) ? Translator("home.aboutUs.whatWeDo.subtitle").map((each, i) => (
               <p key={i}>{each}</p>
-            ))}
+            )) : (
+              <p>{Translator("home.aboutUs.whatWeDo.subtitle").join(" ")}</p>
+            )}
           </div>
         </div>
         <div className="content">
@@ -61,36 +67,20 @@ const AboutUs = () => {
         <p className="declaration"><Translator id="home.aboutUs.title"/></p>
         <p className="declaration"><Translator id="home.aboutUs.subtitle"/></p>
         <div className="pipeline-works">
-          <div className="each-item">
-            <div className="numeric-container">
-              <hr/>
-              <span className="numeric">
-                <p>1</p>
-              </span>
+          {howItWorks.map((each, i) => (
+            <div className="each-item" key={i}>
+              <div className="numeric-container">
+                <hr/>
+                <span className="numeric">
+                  <p>{i + 1}</p>
+                </span>
+              </div>
+              <div className="text-container">
+                <p className="item-header"><Translator id={each.header}/></p>
+                <p className="item-content"><Translator id={each.content}/></p>
+              </div>
             </div>
-            <p className="item-header"><Translator id="home.aboutUs.point1.header"/></p>
-            <p className="item-content"><Translator id="home.aboutUs.point1.content"/></p>
-          </div>
-          <div className="each-item">
-            <div className="numeric-container">
-              <hr/>
-              <span className="numeric">
-                <p>2</p>
-              </span>
-            </div>
-            <p className="item-header"><Translator id="home.aboutUs.point2.header"/></p>
-            <p className="item-content"><Translator id="home.aboutUs.point2.content"/></p>
-          </div>
-          <div className="each-item">
-            <div className="numeric-container">
-              <hr/>
-              <span className="numeric">
-                <p>3</p>
-              </span>
-            </div>
-            <p className="item-header"><Translator id="home.aboutUs.point3.header"/></p>
-            <p className="item-content"><Translator id="home.aboutUs.point3.content"/></p>
-          </div>
+          ))}
         </div>
       </div>
     </div>
