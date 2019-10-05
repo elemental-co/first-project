@@ -8,9 +8,9 @@ import Footer from "./Footer";
 const Home = () => {
   return(
     <div className="home-container">
-      {/*<Header/>*/}
+      <Header/>
       <AboutUs/>
-      {/*<Footer/>*/}
+      <Footer/>
     </div>
   )
 };

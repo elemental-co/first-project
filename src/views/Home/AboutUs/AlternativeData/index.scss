@@ -32,7 +32,7 @@
 			}
 		}
 		.services-container {
-			max-width: 1020px;
+			max-width: 1000px;
 			margin: 128px auto 0 auto;
 			.tab-nav {
 				position: relative;
@@ -149,8 +149,9 @@
 				max-width: 630px;
 			}
 			.accordion-nav {
-				margin: 0;
+				margin: 0 auto;
 				padding: 0 16px;
+				max-width: 590px;
 				box-sizing: border-box;
 				li {
 					list-style: none;
@@ -302,11 +303,25 @@
 							.label {
 								color: #A7A9C0;
 							}
-							svg, hr {
+							svg {
 								display: none;
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: $tablet) {
+		.alternative-data .services-container .accordion-nav li .accordion-body {
+			max-width: 558px;
+			.captured-data {
+				max-width: 490px;
+				hr {
+					width: 235px;
+				}
+				.content {
+					max-width: 416px;
 				}
 			}
 		}

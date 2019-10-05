@@ -136,17 +136,17 @@
 		z-index: 2;
 		opacity: 0;
 		width: 100%;
+		display: flex;
 		visibility: hidden;
 		position: absolute;
+		flex-direction: column;
 		height: calc(100% - 80px);
 		transition-duration: 0.3s;
 		background-color: rgba(#656565, 0.5);
 		.context-content {
-			top: 0;
 			width: 100%;
 			height: 172px;
 			display: flex;
-			position: absolute;
 			flex-direction: column;
 			justify-content: center;
 			background-color: #ffffff;
@@ -167,6 +167,10 @@
 				display: inline-block;
 				font-family: "Rubik", sans-serif;
 			}
+		}
+		.foreground-layer {
+			width: 100%;
+			flex-grow: 1;
 		}
 	}
 	@media only screen and (min-width: $tablet) {

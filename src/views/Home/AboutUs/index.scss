@@ -160,6 +160,8 @@
 			}
 		}
 		.content {
+			width: 95%;
+			margin: auto;
 			display: flex;
 			position: relative;
 			flex-direction: row;
@@ -171,9 +173,9 @@
 				max-height: 275px;
 				align-self: center;
 				border-radius: 8px;
+				padding: 40px 0 47px 0;
 				box-sizing: border-box;
 				background-color: #ffffff;
-				padding: 40px 105px 47px 105px;
 				box-shadow: 0 40px 80px rgba(27, 30, 78, 0.08);
 				&:first-child {
 					margin-right: 15px;
@@ -186,6 +188,7 @@
 				}
 				.header {
 					width: 100%;
+					margin: auto;
 					color: #303037;
 					font-size: 36px;
 					max-width: 370px;
@@ -201,8 +204,69 @@
 					max-width: 380px;
 					margin-top: 40px;
 					line-height: 160%;
+					margin-left: auto;
+					margin-right: auto;
 					text-align: center;
 					font-family: "SF Compact Text Regular", sans-serif;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: $tablet) {
+		.what-we-do {
+			img {
+				width: 2350px;
+			}
+			.header .subtitle p {
+				margin: auto;
+				max-width: 558px;
+			}
+			.content {
+				flex-direction: column;
+				.content-card {
+					max-width: 558px;
+					margin-bottom: 24px;
+					margin-left: 0 !important;
+					margin-right: 0 !important;
+					padding: 16px 16px 42px 16px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					.header {
+						margin: auto;
+						font-size: 22px;
+						max-width: 230px;
+					}
+					.content {
+						font-size: 16px;
+						max-width: none;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: $mobile) {
+		.what-we-do {
+			padding-top: 110px;
+			img {
+				transform: translateX(-51.5%);
+			}
+			.header {
+				.title {
+					font-size: 18px;
+				}
+				.subtitle p {
+					margin: auto;
+					font-size: 28px;
+					max-width: 350px;
+				}
+			}
+			.content {
+				.content-card {
+					width: 90%;
+					padding: 16px;
+					max-width: 344px;
 				}
 			}
 		}
@@ -395,6 +459,8 @@
 					max-width: 260px;
 				}
 			}
+		}
+		@media only screen and (max-width: $mobile) {
 		}
 	}
 }

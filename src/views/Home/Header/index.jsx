@@ -67,6 +67,7 @@ const Header = () => {
               <hr/>
               <p><Translator id="home.contextMenu.whatWeDo"/></p>
             </div>
+            <span className="foreground-layer" onClick={toggleContextMenu}/>
           </div>
         ) : null}
       <div className="header-content">
