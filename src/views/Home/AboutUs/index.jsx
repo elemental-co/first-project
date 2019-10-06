@@ -16,7 +16,7 @@ const AboutUs = () => {
     {header: "home.aboutUs.point3.header", content: "home.aboutUs.point3.content"}
   ];
   return(
-    <div className="about-us-container">
+    <div className="about-us-container" id="home-about-us">
       <div className="who-are-we">
         <div className="left">
           <p><Translator id="home.whoWeAre.header"/></p>
@@ -36,7 +36,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="what-we-do">
+      <div className="what-we-do" id="home-what-we-do">
         {screenResolution > parseInt(mobile)
           ? <img src={require("../../../assets/image/homeAbout1.svg")} alt="Background"/>
           : <img src={require("../../../assets/image/homeAbout2.svg")} alt="Background"/>}

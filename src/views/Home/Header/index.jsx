@@ -2,6 +2,7 @@ import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
 import {mobile, tablet, desktopLg} from "../../../assets/style/_regular.scss";
+import {scrollToElement} from "../../../helpers";
 import Translator from "Components/Translator";
 
 const Header = () => {
@@ -11,12 +12,15 @@ const Header = () => {
     setScreenResolution(window.innerWidth);
   });
   const toggleContextMenu = () => {
-    if(contextMenuState){
-      document.getElementsByTagName("html")[0].removeAttribute("style");
-    }else{
-      document.getElementsByTagName("html")[0].style.overflow = "hidden";
-    }
-    setContextMenuState(!contextMenuState);
+    return new Promise(resolve => {
+      if(contextMenuState){
+        document.getElementsByTagName("html")[0].removeAttribute("style");
+      }else{
+        document.getElementsByTagName("html")[0].style.overflow = "hidden";
+      }
+      setContextMenuState(!contextMenuState);
+      setTimeout(() => resolve(), 300);
+    });
   };
   const contextClassname = contextMenuState ? {style: {opacity: 1, visibility: "visible"}} : {};
   return(
@@ -47,8 +51,8 @@ const Header = () => {
                 </Fragment>
               ) : (
                 <Fragment>
-                  <p><Translator id="home.navbar1"/></p>
-                  <p><Translator id="home.navbar2"/></p>
+                  <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
+                  <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
                   <button className="contact-button">
                     <Translator id="button.contact"/>
                   </button>
@@ -63,9 +67,13 @@ const Header = () => {
         ? (
           <div className="mobile-context-menu" {...contextClassname}>
             <div className="context-content">
-              <p><Translator id="home.contextMenu.whoWeAre"/></p>
+              <p onClick={() => toggleContextMenu().then(() => scrollToElement("who-we-are-link"))}>
+                <Translator id="home.contextMenu.whoWeAre"/>
+              </p>
               <hr/>
-              <p><Translator id="home.contextMenu.whatWeDo"/></p>
+              <p onClick={() => toggleContextMenu().then(() => scrollToElement("what-we-do-link"))}>
+                <Translator id="home.contextMenu.whatWeDo"/>
+              </p>
             </div>
             <span className="foreground-layer" onClick={toggleContextMenu}/>
           </div>

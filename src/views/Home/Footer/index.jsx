@@ -2,6 +2,7 @@ import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
 import {tablet} from "../../../assets/style/_regular.scss";
+import {scrollToElement} from "../../../helpers";
 import Translator from "Components/Translator";
 
 const Footer = () => {
@@ -18,7 +19,6 @@ const Footer = () => {
           <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
             <div className="sitemap">
-              <p><Translator id="home.home"/></p>
               <p><Translator id="home.navbar1"/></p>
               <p><Translator id="home.navbar2"/></p>
             </div>
@@ -39,11 +39,9 @@ const Footer = () => {
           {screenResolution <= parseInt(tablet) ? (
             <Fragment>
               <div className="sitemap-small">
-                <p><Translator id="home.home"/></p>
+                <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
                 &bull;
-                <p><Translator id="home.navbar1"/></p>
-                &bull;
-                <p><Translator id="home.navbar2"/></p>
+                <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
               </div>
               <img className="logo-small" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
             </Fragment>
