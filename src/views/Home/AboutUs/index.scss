@@ -215,6 +215,7 @@
 	@media only screen and (max-width: $tablet) {
 		.what-we-do {
 			margin-top: 160px;
+			padding-bottom: 400px;
 			img {
 				width: 2350px;
 			}
@@ -250,6 +251,7 @@
 	@media only screen and (max-width: $mobile) {
 		.what-we-do {
 			padding-top: 110px;
+			padding-bottom: 400px;
 			img {
 				width: auto;
 				transform: translateX(-51.5%);
@@ -277,8 +279,8 @@
 
 @mixin how-it-works {
 	.how-it-works {
+		margin: auto;
 		max-width: 1440px;
-		margin: 0 auto 236px auto;
 		.declaration {
 			margin: 0;
 			&:nth-child(1) {
@@ -483,11 +485,17 @@
 	.about-us-container {
 		width: 100%;
 		padding-top: 90px;
+		margin-bottom: 236px;
 		box-sizing: border-box;
 		@include who-are-we;
 		@include what-we-do;
 		@include alternative-data;
 		@include how-it-works;
+	}
+	@media only screen and (max-width: $tablet) {
+		.about-us-container {
+			margin-bottom: 150px;
+		}
 	}
 	@media only screen and (max-width: $mobile) {
 		.about-us-container {
