@@ -1,10 +1,12 @@
 @import "Header/index";
 @import "AboutUs/index";
+@import "ContactForm/index";
 @import "Footer/index";
 
 .home-container {
 	min-height: 100%;
 	@include header-container;
 	@include about-us-container;
+	@include contact-form-container;
 	@include footer-container;
 }

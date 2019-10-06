@@ -1,0 +1,92 @@
+@import "../../../assets/style/regular";
+
+@mixin contact-form-container {
+	.contact-form-container {
+		width: 100%;
+		margin-bottom: 184px;
+		.header {
+			margin-bottom: 80px;
+			p {
+				margin: 0;
+				font-family: "Rubik", sans-serif;
+				&:first-child {
+					color: #A7A9C0;
+					font-size: 24px;
+					font-weight: 500;
+					text-align: center;
+					margin-bottom: 16px;
+				}
+				&:last-child {
+					color: #303037;
+					font-size: 48px;
+					font-weight: bold;
+					text-align: center;
+				}
+			}
+		}
+		.contact-form {
+			margin: auto;
+			max-width: 810px;
+			border-radius: 8px;
+			box-sizing: border-box;
+			background-color: #FFFFFF;
+			padding: 32px 75px 48px 75px;
+			box-shadow: 0 40px 80px rgba(27, 30, 78, 0.08);
+			.contact-form-top {
+				display: flex;
+				justify-content: center;
+				input {
+					width: 50%;
+					border: none;
+					outline: none;
+					color: #303037;
+					font-size: 20px;
+					padding: 16px 0;
+					box-sizing: border-box;
+					border-bottom: 2px solid #EEEFF7;
+					font-family: "SF Compact Text Regular", sans-serif;
+					&::placeholder {
+						color: #A7A9C0;
+					}
+					&:first-child {
+						margin-right: 15px;
+					}
+					&:last-child {
+						margin-left: 15px;
+					}
+				}
+			}
+			.contact-form-bottom {
+				margin-top: 4px;
+				input {
+					width: 100%;
+					border: none;
+					outline: none;
+					padding: 16px 0;
+					font-size: 20px;
+					box-sizing: border-box;
+					border-bottom: 2px solid #EEEFF7;
+					font-family: "SF Compact Text Regular", sans-serif;
+					&::placeholder {
+						color: #A7A9C0;
+					}
+				}
+				button {
+					padding: 0;
+					width: 140px;
+					height: 40px;
+					border: none;
+					outline: none;
+					color: #FFFFFF;
+					display: block;
+					cursor: pointer;
+					font-size: 14px;
+					border-radius: 8px;
+					margin: 48px auto 0 auto;
+					background-color: #F88634;
+					font-family: "SF Compact Text Regular", sans-serif;
+				}
+			}
+		}
+	}
+}

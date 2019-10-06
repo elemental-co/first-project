@@ -62,6 +62,9 @@ const AlternativeData = () => {
             <div className={activeTab.content.logo.length <= 2 ? "tab-content content-sm" : "tab-content"}>
               <div className="services">
                 <div className="images">
+                  <div className="separator">
+                    {activeTab.content.logo.slice(1).map(i => <hr key={i}/>)}
+                  </div>
                   {activeTab.content.logo.map((each, i) => {
                     return (
                       <div key={i} image-width={`1/${activeTab.content.logo.length}`}>
