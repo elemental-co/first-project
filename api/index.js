@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const app = express();
 
 const urlencodedParser = bodyParser.json();
@@ -12,6 +13,8 @@ const transporter = nodemailer.createTransport({
     pass: "87f3e7a107408f5be0e479cad4fc209f"
   }
 });
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send({
