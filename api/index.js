@@ -13,6 +13,13 @@ const transporter = nodemailer.createTransport({
   }
 });
 
+app.get("/", (req, res) => {
+  res.send({
+    online: true,
+    about: "PT Acura Labs Indonesia"
+  });
+});
+
 app.post("/sendmail", urlencodedParser, async (req, res) => {
   try{
     const sendMail = await transporter.sendMail({
