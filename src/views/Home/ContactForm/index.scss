@@ -3,6 +3,7 @@
 @mixin contact-form-container {
 	.contact-form-container {
 		width: 100%;
+		padding-top: 236px;
 		margin-bottom: 184px;
 		.header {
 			margin-bottom: 80px;
@@ -86,15 +87,22 @@
 					margin: 48px auto 0 auto;
 					background-color: #F88634;
 					font-family: "SF Compact Text Regular", sans-serif;
+					&:disabled {
+						cursor: default;
+						background-color: #e0e0e0;
+					}
 				}
 			}
 		}
 	}
 	@media only screen and (max-width: $tablet) {
-		.contact-form-container .header p {
-			&:last-child {
-				margin: auto;
-				max-width: 450px;
+		.contact-form-container {
+			padding-top: 150px;
+			.header p {
+				&:last-child {
+					margin: auto;
+					max-width: 450px;
+				}
 			}
 		}
 	}

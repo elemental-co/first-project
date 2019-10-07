@@ -38,7 +38,7 @@ const Header = () => {
             <div className="right">
               {screenResolution <= parseInt(tablet) ? (
                 <Fragment>
-                  <button className="icon-button">
+                  <button name="contact-us-link" onClick={scrollToElement} className="icon-button">
                     <img alt="Icon" src={require("../../../assets/image/homeHeader7.svg")}/>
                   </button>
                   <button className="icon-button" onClick={toggleContextMenu}>
@@ -53,7 +53,7 @@ const Header = () => {
                 <Fragment>
                   <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
                   <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
-                  <button className="contact-button">
+                  <button name="contact-us-link" onClick={scrollToElement} className="contact-button">
                     <Translator id="button.contact"/>
                   </button>
                 </Fragment>
@@ -85,7 +85,7 @@ const Header = () => {
             <p><Translator id="home.transform"/></p>
             <p><Translator id="home.desc"/></p>
             <div className="button-container">
-              <button>
+              <button name="who-we-are-link" onClick={scrollToElement}>
                 <Translator id="button.learn"/>
               </button>
               <img alt="Illustration" src={require("../../../assets/image/homeHeader5.svg")}/>

@@ -485,17 +485,11 @@
 	.about-us-container {
 		width: 100%;
 		padding-top: 90px;
-		margin-bottom: 236px;
 		box-sizing: border-box;
 		@include who-are-we;
 		@include what-we-do;
 		@include alternative-data;
 		@include how-it-works;
-	}
-	@media only screen and (max-width: $tablet) {
-		.about-us-container {
-			margin-bottom: 150px;
-		}
 	}
 	@media only screen and (max-width: $mobile) {
 		.about-us-container {
