@@ -8,7 +8,7 @@ export const postContactForm = obj => {
       data: JSON.stringify(obj),
       headers: {"Content-Type": "application/json"}
     }).then(({data}) => {
-      console.log(data);
+      resolve(data);
     }).catch(err => console.error(err));
   });
 };
