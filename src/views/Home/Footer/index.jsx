@@ -19,8 +19,8 @@ const Footer = () => {
           <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
             <div className="sitemap">
-              <p><Translator id="home.navbar1"/></p>
-              <p><Translator id="home.navbar2"/></p>
+              <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
+              <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
             </div>
           ) : null}
         </div>

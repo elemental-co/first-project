@@ -109,6 +109,20 @@
 				}
 			}
 		}
+		@media only screen and (max-width: $tablet) {
+			.navigation-bar-main {
+				.logo-container {
+					width: 120px;
+					background-position: center right;
+				}
+				.navigation-bar-item {
+					padding-left: 40px;
+					img {
+						width: unset !important;
+					}
+				}
+			}
+		}
 		@media only screen and (max-width: $mobile) {
 			.navigation-bar-main {
 				height: 80px;

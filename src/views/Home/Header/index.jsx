@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
-import {mobile, tablet, desktopLg} from "../../../assets/style/_regular.scss";
+import {tablet, desktopLg} from "../../../assets/style/_regular.scss";
 import {scrollToElement} from "../../../helpers";
 import Translator from "Components/Translator";
 
@@ -30,7 +30,7 @@ const Header = () => {
         <div className="navigation-bar-main">
           <span className="logo-container"/>
           <div className="navigation-bar-item">
-            {screenResolution <= parseInt(mobile) ? (
+            {screenResolution <= parseInt(tablet) ? (
               <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
             ) : (
               <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
