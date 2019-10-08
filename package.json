@@ -74,8 +74,8 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
-    "server:prod": "node api/index.js",
-    "server:dev": "nodemon api/index.js",
+    "server:prod": "node api/app.js",
+    "server:dev": "nodemon api/app.js",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
