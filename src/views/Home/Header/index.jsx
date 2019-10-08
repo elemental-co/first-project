@@ -23,9 +23,10 @@ const Header = () => {
     });
   };
   const contextClassname = contextMenuState ? {style: {opacity: 1, visibility: "visible"}} : {};
+  const navbarStyleGuide = contextMenuState ? {style: {backgroundColor: "#FFFFFF"}} : {};
   return(
     <div className="header-container">
-      <nav className="navigation-bar">
+      <nav className="navigation-bar" {...navbarStyleGuide}>
         <span className="navigation-bar-extend logo-container-extend"/>
         <div className="navigation-bar-main">
           <span className="logo-container"/>
