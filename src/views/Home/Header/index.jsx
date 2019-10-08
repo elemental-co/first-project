@@ -16,6 +16,7 @@ const Header = () => {
       if(contextMenuState){
         document.getElementsByTagName("html")[0].removeAttribute("style");
       }else{
+        scrollToElement(null, {duration: 500});
         document.getElementsByTagName("html")[0].style.overflow = "hidden";
       }
       setContextMenuState(!contextMenuState);
