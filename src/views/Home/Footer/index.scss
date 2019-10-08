@@ -18,8 +18,10 @@
 				img {
 					display: block;
 				}
-				p {
+				p, a {
 					margin: 0;
+					display: block;
+					text-decoration: none;
 					font-family: "SF Compact Text Regular", sans-serif;
 				}
 				.logo {
@@ -64,7 +66,7 @@
 			flex-direction: column;
 			.left, .center, .right {
 				margin-right: 0;
-				p {
+				p, a {
 					text-align: center;
 				}
 				img {

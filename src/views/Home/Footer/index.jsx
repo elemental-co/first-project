@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="center">
           <p className="footer-title"><Translator id="text.email"/></p>
-          <p className="footer-text">hello@acuralabs.ai</p>
+          <a href="mailto:admin@acuralabs.ai" className="footer-text">admin@acuralabs.ai</a>
           <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
             <img className="logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
