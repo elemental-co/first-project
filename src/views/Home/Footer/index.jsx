@@ -14,11 +14,9 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="left">
-          <p className="footer-title"><Translator id="text.phone"/></p>
-          <p className="footer-text">+62 812 0000 0000</p>
-          <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
             <div className="sitemap">
+              <p name="home-link" onClick={scrollToElement}><Translator id="home.navbar0"/></p>
               <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
               <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
             </div>
@@ -29,7 +27,7 @@ const Footer = () => {
           <a href="mailto:admin@acuralabs.ai" className="footer-text">admin@acuralabs.ai</a>
           <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
-            <img className="logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
+            <img className="logo" alt="Logo" src={require("../../../assets/image/homeHeader9.svg")}/>
           ) : null}
         </div>
         <div className="right">
@@ -43,7 +41,7 @@ const Footer = () => {
                 &bull;
                 <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
               </div>
-              <img className="logo-small" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
+              <img className="logo-small" alt="Logo" src={require("../../../assets/image/homeHeader9.svg")}/>
             </Fragment>
           ) : null}
           <p className="copyright">&copy; {new Date().getFullYear()}. <Translator id="footer.copyright"/></p>

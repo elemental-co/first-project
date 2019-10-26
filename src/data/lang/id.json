@@ -1,22 +1,22 @@
 {
   "text": {
-    "phone": "Telepon",
+    "phone": "Phone",
     "email": "Email",
-    "address": "Alamat"
+    "address": "Address"
   },
   "button": {
     "contact": "Contact Us",
     "learn": "Learn More"
   },
   "home": {
-    "home": "Beranda",
+    "home": "Home",
     "contextMenu": {
       "whoWeAre": "Who We Are?",
       "whatWeDo": "What We Do?"
     },
-    "paas": "Profiling as a Service",
-    "transform": "Transforming Underwriting Process with Big Data and A.I.",
-    "desc": "Acura Labs helps financial institutions by providing reliable information for better financial decisions",
+    "paas": "Profiling & Credit Scoring as a Service",
+    "transform": "Transforming Underwriting Process with Big Data and Artificial Intelligence",
+    "desc": "Acura Labs helps financial institutions by providing access \nto alternative data for better financial decisions",
     "navbar1": "Who We Are?",
     "navbar2": "What We Do?",
     "whoWeAre": {
@@ -24,11 +24,15 @@
       "content": ["We’ve always been", "on a mission to expand", "financial inclusion", "in Indonesia"],
       "point1": {
         "header": "Alternative Data",
-        "content": "Low penetration of bank financial product is caused by the lack of data coverage, and we are here to start increasing it."
+        "content": "Low penetration of financial products are caused by the lack of data coverage, and we are here to help."
       },
       "point2": {
         "header": "Automated Process",
-        "content": "Empowering bank in having automated know-your-customer and application process."
+        "content": "Empowering financial institutions\n to shorten approval time."
+      },
+      "point3": {
+        "header": "Credit Scoring",
+        "content": "Leveraging credit history and alternative data in an easy-to-use scoring system."
       }
     },
     "aboutUs": {
@@ -49,14 +53,14 @@
       },
       "whatWeDo": {
         "header": "Acura Labs Services",
-        "subtitle": ["Secure, Reliable, and Cheap", "Credit Risk Management for Companies"],
+        "subtitle": ["Secure and Reliable Credit Risk", "Management for Financial Institutions"],
         "point1": {
-          "header": "Capturing Alternative Data",
-          "content": "We capture alternative data and used machine learning to reach the underserved market."
+          "header": "Profiling Services",
+          "content": "Providing access to alternative data and using machine learning algorithm to reach the underserved market."
         },
         "point2": {
-          "header": "Digitizing KYC & \nApplication Process",
-          "content": "We automate the verification of personal information, address, and income."
+          "header": "Credit Score Development",
+          "content": "Developing credit scoring system with a strong foundation of credit history and alternative data to better measure the risks of your customers."
         }
       }
     },

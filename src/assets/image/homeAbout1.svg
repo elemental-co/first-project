@@ -12,7 +12,7 @@
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Mask" fill="#313896" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <use id="Mask" fill="#2C4EA2" fill-rule="nonzero" xlink:href="#path-1"></use>
                 <g mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero" id="Path">
                     <g transform="translate(893.870830, -167.000000)">
                         <path d="M2,204 C3.105,204 4,203.105 4,202 C4,200.895 3.105,200 2,200 C0.895,200 0,200.895 0,202 C0,203.105 0.895,204 2,204 Z"></path>
@@ -30,7 +30,7 @@
                     </g>
                 </g>
             </g>
-            <path d="M2240.83,573.71 C1864.59,1084.08 1145.85,1192.82 635.481,816.59 L941.651,401.26 C1222.64,608.4 1618.36,548.53 1825.5,267.538 L2240.83,573.71 Z" id="Path" fill="#313896" fill-rule="nonzero"></path>
+            <path d="M2240.83,573.71 C1864.59,1084.08 1145.85,1192.82 635.481,816.59 L941.651,401.26 C1222.64,608.4 1618.36,548.53 1825.5,267.538 L2240.83,573.71 Z" id="Path" fill="#2C4EA2" fill-rule="nonzero"></path>
             <path d="M1669,593 C1670.1,593 1671,592.1 1671,591 C1671,589.9 1670.1,589 1669,589 C1667.9,589 1667,589.9 1667,591 C1667,592.1 1667.9,593 1669,593 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
             <path d="M1719,593 C1720.1,593 1721,592.1 1721,591 C1721,589.9 1720.1,589 1719,589 C1717.9,589 1717,589.9 1717,591 C1717,592.1 1717.9,593 1719,593 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
             <path d="M1769,593 C1770.1,593 1771,592.1 1771,591 C1771,589.9 1770.1,589 1769,589 C1767.9,589 1767,589.9 1767,591 C1767,592.1 1767.9,593 1769,593 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>

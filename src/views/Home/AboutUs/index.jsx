@@ -34,6 +34,10 @@ const AboutUs = () => {
             <p><Translator id="home.whoWeAre.point2.header"/></p>
             <p><Translator id="home.whoWeAre.point2.content"/></p>
           </div>
+          <div className="each-point">
+            <p><Translator id="home.whoWeAre.point3.header"/></p>
+            <p><Translator id="home.whoWeAre.point3.content"/></p>
+          </div>
         </div>
       </div>
       <div className="what-we-do" id="home-what-we-do">

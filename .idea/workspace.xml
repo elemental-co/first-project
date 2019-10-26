@@ -3,8 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="52205d77-c9ab-4392-a191-7ffd0fa4e62a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/homeAbout1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homeAbout1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/homeAbout2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homeAbout2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/homeHeader1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homeHeader1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/homeHeader3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homeHeader3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/homeHeader6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homeHeader6.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/_regular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/_regular.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/lang/id.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/lang/id.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/ContactForm/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/ContactForm/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Footer/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Footer/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +29,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/views/Home/index.jsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/views/App.jsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/views/Home/index.jsx" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1QafMarx2GXQQWihXbHM6rej8qx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -103,7 +116,8 @@
       <workItem from="1570181437389" duration="3502000" />
       <workItem from="1570239832859" duration="25091000" />
       <workItem from="1570411987716" duration="15277000" />
-      <workItem from="1570504055327" duration="4232000" />
+      <workItem from="1570504055327" duration="4698000" />
+      <workItem from="1572060439928" duration="6754000" />
     </task>
     <servers />
   </component>

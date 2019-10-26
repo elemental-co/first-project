@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
-import {tablet, desktopLg} from "../../../assets/style/_regular.scss";
+import {tablet, desktopMd} from "../../../assets/style/_regular.scss";
 import {scrollToElement} from "../../../helpers";
 import Translator from "Components/Translator";
 
@@ -30,7 +30,6 @@ const Header = () => {
       <nav className="navigation-bar" {...navbarStyleGuide}>
         <span className="navigation-bar-extend logo-container-extend"/>
         <div className="navigation-bar-main">
-          <span className="logo-container"/>
           <div className="navigation-bar-item">
             {screenResolution <= parseInt(tablet) ? (
               <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
@@ -93,9 +92,11 @@ const Header = () => {
               <img alt="Illustration" src={require("../../../assets/image/homeHeader5.svg")}/>
             </div>
           </div>
-          {screenResolution >= parseInt(desktopLg)
-            ? <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
-            : null}
+          {screenResolution ?
+            screenResolution >= parseInt(desktopMd)
+              ? <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
+              : <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader8.svg")}/>
+          : null}
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 @mixin footer-container {
 	.footer-container {
-		background-color: #313895;
+		background-color: #2C4EA2;
 		.footer-content {
 			width: 100%;
 			margin: auto;
@@ -39,21 +39,20 @@
 					line-height: 140%;
 					font-weight: bold;
 				}
-				.sitemap {
-					margin-top: 64px;
-					p {
-						color: #ffffff;
-						font-size: 16px;
-						cursor: pointer;
-						line-height: 140%;
-						&:nth-child(2) {
-							margin: 16px 0;
-						}
+				.sitemap p {
+					color: #ffffff;
+					font-size: 16px;
+					cursor: pointer;
+					line-height: 140%;
+					&:nth-child(2) {
+						margin: 16px 0;
 					}
 				}
 				.copyright {
 					font-size: 16px;
 					margin-top: 64px;
+					max-width: 590px;
+					line-height: 140%;
 					color: rgba(255, 255, 255, 0.5);
 				}
 			}
