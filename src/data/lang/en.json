@@ -37,9 +37,9 @@
       }
     },
     "aboutUs": {
-      "intro": "Digitizing Application Process",
-      "title": "We Work with User Privacy in Mind",
-      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password.",
+      "intro": "Credit Score Development",
+      "title": "Machine Learning Techniques & Big Data for Predictive Credit Score",
+      "subtitle": "Our credit scoring system combines the conventional credit history and alternative data to have a 360 customer’s view to accurately predict the risk profile of an incoming loan application",
       "point1": {
         "header": "Application",
         "content": "User will be asked to connect their digital accounts & giving consent for us to access."
@@ -70,25 +70,51 @@
       "title": "Alternative Data for Better Financial Decision",
       "subtitle": "Our data layer engine helps financial institutions and business partners to leverage alternative data, with the user’s consent, for making credit decisions",
       "capturedData": "Captured Data",
-      "point1": {
-        "header": "Banking",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      "version1": {
+        "point1": {
+          "header": "Banking",
+          "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        },
+        "point2": {
+          "header": "Riding",
+          "content": "Customer Info, Transaction Details, Go-Pay History, Bank Account Registered, Go-Points"
+        },
+        "point3": {
+          "header": "Shopping",
+          "content": "Transaction Details, Payment Method, Shipping Address, Bank Account Registered, Rating/Review/Comment"
+        },
+        "point4": {
+          "header": "Traveling",
+          "content": "Flight Info, Hotel Info, Payment Method, Traveloka Pay, Points & Rewards"
+        },
+        "point5": {
+          "header": "Many More...",
+          "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        }
       },
-      "point2": {
-        "header": "Riding",
-        "content": "Customer Info, Transaction Details, Go-Pay History, Bank Account Registered, Go-Points"
-      },
-      "point3": {
-        "header": "Shopping",
-        "content": "Transaction Details, Payment Method, Shipping Address, Bank Account Registered, Rating/Review/Comment"
-      },
-      "point4": {
-        "header": "Traveling",
-        "content": "Flight Info, Hotel Info, Payment Method, Traveloka Pay, Points & Rewards"
-      },
-      "point5": {
-        "header": "Many More...",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      "version2": {
+        "subtitleHeader": "Captured Data",
+        "point1": {
+          "header": "Financial Institutions Accounts",
+          "content": "Account Information, Transaction Details, etc."
+        },
+        "point2": {
+          "header": "E-Wallet Accounts",
+          "content": "Account Information, Transaction Details, etc."
+        },
+        "point3": {
+          "header": "E-Commerce Accounts",
+          "content": "Account Information, Payment Method, Shipping Address, etc."
+        },
+        "point4": {
+          "header": "Ride Hailing Account",
+          "content": "Customer Information, Transaction Details, Ride History, etc."
+        },
+        "point5": {
+          "header": "Online Travel Agent",
+          "content": "Customer Information, Transaction Details, Flight & Hotel Details, etc."
+        },
+        "point6": "And many more..."
       }
     },
     "contactUs": {

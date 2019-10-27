@@ -3,7 +3,7 @@
 @mixin contact-form-container {
 	.contact-form-container {
 		width: 100%;
-		padding-top: 236px;
+		padding-top: 136px;
 		margin-bottom: 184px;
 		.header {
 			margin-bottom: 80px;
@@ -98,7 +98,7 @@
 	}
 	@media only screen and (max-width: $tablet) {
 		.contact-form-container {
-			padding-top: 150px;
+			padding-top: 100px;
 			.header p {
 				&:last-child {
 					margin: auto;
@@ -109,6 +109,7 @@
 	}
 	@media only screen and (max-width: $mobile) {
 		.contact-form-container {
+			padding-top: 50px;
 			margin-bottom: 100px;
 			.header {
 				margin-bottom: 60px;
