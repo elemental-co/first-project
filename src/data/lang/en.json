@@ -39,7 +39,7 @@
     "aboutUs": {
       "intro": "Digitizing Application Process",
       "title": "We Work with User Privacy in Mind",
-      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password.",
+      "subtitle": "We respect the user privacy by having one-time-only access after the user has given their consent and \nnot storing their user credentials password.",
       "point1": {
         "header": "Application",
         "content": "User will be asked to connect their digital accounts & giving consent for us to access."
@@ -156,6 +156,6 @@
     }
   },
   "footer": {
-    "copyright": "ⓒ 2019. Recorded in Otoritas Jasa Keuangan with registration number\nS-84/MS.72/2019 under POJK 13/2018."
+    "copyright": "Recorded in Otoritas Jasa Keuangan with registration number\nS-84/MS.72/2019 under POJK 13/2018."
   }
 }

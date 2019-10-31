@@ -201,16 +201,20 @@
 		}
 	}
 	@media only screen and (max-width: $mobile) {
-		.declaration {
-			&:nth-child(1) {
-				font-size: 18px;
-			}
-			&:nth-child(2) {
-				font-size: 28px;
-				max-width: 270px;
-			}
-			&:nth-child(3) {
-				max-width: 260px;
+		.how-it-works {
+			padding: 0 16px;
+			.declaration {
+				&:nth-child(1) {
+					font-size: 18px;
+				}
+				&:nth-child(2) {
+					max-width: 270px;
+					margin-bottom: 32px;
+					font-size: 28px !important;
+				}
+				&:nth-child(3) {
+					max-width: 340px;
+				}
 			}
 		}
 	}
