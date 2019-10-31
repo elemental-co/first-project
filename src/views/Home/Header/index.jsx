@@ -31,11 +31,7 @@ const Header = () => {
         <span className="navigation-bar-extend logo-container-extend"/>
         <div className="navigation-bar-main">
           <div className="navigation-bar-item">
-            {screenResolution <= parseInt(tablet) ? (
-              <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
-            ) : (
-              <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
-            )}
+            <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
             <div className="right">
               {screenResolution <= parseInt(tablet) ? (
                 <Fragment>
