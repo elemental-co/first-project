@@ -65,11 +65,11 @@ const Header = () => {
           <div className="mobile-context-menu" {...contextClassname}>
             <div className="context-content">
               <p onClick={() => toggleContextMenu().then(() => scrollToElement("who-we-are-link"))}>
-                <Translator id="home.contextMenu.whoWeAre"/>
+                <Translator id="home.navbar1"/>
               </p>
               <hr/>
               <p onClick={() => toggleContextMenu().then(() => scrollToElement("what-we-do-link"))}>
-                <Translator id="home.contextMenu.whatWeDo"/>
+                <Translator id="home.navbar2"/>
               </p>
             </div>
             <span className="foreground-layer" onClick={toggleContextMenu}/>
