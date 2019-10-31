@@ -37,6 +37,8 @@ const Footer = () => {
           {screenResolution <= parseInt(tablet) ? (
             <Fragment>
               <div className="sitemap-small">
+                <p name="home-link" onClick={scrollToElement}><Translator id="home.navbar0"/></p>
+                &bull;
                 <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
                 &bull;
                 <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>

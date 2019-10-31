@@ -163,6 +163,7 @@
 	}
 	@media only screen and (max-width: $mobile) {
 		.alternative-data {
+			margin-bottom: 80px;
 			.declaration {
 				&:nth-child(1) {
 					font-size: 18px;
@@ -177,6 +178,9 @@
 				&:nth-child(3) {
 					max-width: 290px;
 				}
+			}
+			.services-card-container .empty-service-card .square-padding {
+				padding-bottom: 30%;
 			}
 		}
 	}

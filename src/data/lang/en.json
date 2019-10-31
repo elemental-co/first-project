@@ -37,6 +37,35 @@
       }
     },
     "aboutUs": {
+      "intro": "Digitizing Application Process",
+      "title": "We Work with User Privacy in Mind",
+      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password.",
+      "point1": {
+        "header": "Application",
+        "content": "User will be asked to connect their digital accounts & giving consent for us to access."
+      },
+      "point2": {
+        "header": "Data Processing",
+        "content": "Then Acura Labs will processes the data and generate reports for respective partner."
+      },
+      "point3": {
+        "header": "Approval",
+        "content": "Based on the generated reports, you can use it for loan underwriting and approval decision."
+      },
+      "whatWeDo": {
+        "header": "Acura Labs Services",
+        "subtitle": ["Secure and Reliable Credit Risk", "Management for Financial Institutions"],
+        "point1": {
+          "header": "Profiling Services",
+          "content": "Providing access to alternative data and using machine learning algorithm to reach the underserved market."
+        },
+        "point2": {
+          "header": "Credit Score Development",
+          "content": "Developing credit scoring system with a strong foundation of credit history and alternative data to better measure the risks of your customers."
+        }
+      }
+    },
+    "creditScoring": {
       "intro": "Credit Score Development",
       "title": "Machine Learning Techniques & Big Data for Predictive Credit Score",
       "subtitle": "Our credit scoring system combines the conventional credit history and alternative data to have a 360 customer’s view to accurately predict the risk profile of an incoming loan application",
