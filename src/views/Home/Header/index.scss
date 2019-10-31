@@ -302,7 +302,7 @@
 					padding: 0 16px;
 					max-width: 375px;
 					box-sizing: border-box;
-					margin: 340px auto 0 auto;
+					margin: 370px auto 0 auto;
 					p {
 						text-align: center;
 						&:nth-child(1) {
@@ -329,6 +329,7 @@
 				}
 				.header-illustration {
 					left: 50%;
+					top: -80px;
 					right: unset;
 					transform: translateX(-50%);
 				}
