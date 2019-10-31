@@ -179,8 +179,13 @@
 					max-width: 290px;
 				}
 			}
-			.services-card-container .empty-service-card .square-padding {
-				padding-bottom: 30%;
+			.services-card-container {
+				.service-card {
+					box-shadow: 0 15px 40px rgba(27, 30, 78, 0.08);
+				}
+				.empty-service-card .square-padding {
+					padding-bottom: 30%;
+				}
 			}
 		}
 	}
