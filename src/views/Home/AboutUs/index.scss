@@ -75,6 +75,14 @@
 			}
 		}
 	}
+	@media only screen and (max-width: $desktop-sm) {
+		.who-are-we .top p {
+			margin-left: unset !important;
+			&:last-child {
+				margin-left: 10px !important;
+			}
+		}
+	}
 	@media only screen and (max-width: $tablet) {
 		.who-are-we {
 			padding: 0 16px;
@@ -87,6 +95,9 @@
 					}
 					&:not(:first-child) {
 						font-size: 28px;
+					}
+					&:last-child {
+						margin-left: 8px !important;
 					}
 				}
 			}
@@ -119,13 +130,18 @@
 		}
 	}
 	@media only screen and (max-width: $mobile) {
-		.who-are-we .bottom .each-point {
-			padding-left: 64px !important;
-			img {
-				$size: 40px;
-				top: 14px;
-				width: $size;
-				height: $size;
+		.who-are-we {
+			.top p:last-child {
+				margin-left: unset !important;
+			}
+			.bottom .each-point {
+				padding-left: 64px !important;
+				img {
+					$size: 40px;
+					top: 14px;
+					width: $size;
+					height: $size;
+				}
 			}
 		}
 	}
@@ -390,7 +406,7 @@
 	}
 	@media only screen and (max-width: $mobile) {
 		.about-us-container {
-			padding-top: 30px;
+			padding-top: 174px;
 		}
 	}
 }
