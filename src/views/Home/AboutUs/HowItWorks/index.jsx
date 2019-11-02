@@ -4,9 +4,9 @@ import Translator from "../../../../components/Translator";
 
 const HowItWorks = () => {
   const howItWorks = [
-    {header: "home.aboutUs.point1.header", content: "home.aboutUs.point1.content"},
-    {header: "home.aboutUs.point2.header", content: "home.aboutUs.point2.content"},
-    {header: "home.aboutUs.point3.header", content: "home.aboutUs.point3.content"}
+    {header: "home.aboutUs.point1.header", icon: "profiling-service-1.svg", content: "home.aboutUs.point1.content"},
+    {header: "home.aboutUs.point2.header", icon: "profiling-service-2.svg", content: "home.aboutUs.point2.content"},
+    {header: "home.aboutUs.point3.header", icon: "profiling-service-3.svg", content: "home.aboutUs.point3.content"}
   ];
   return(
     <div className="how-it-works">
@@ -16,11 +16,12 @@ const HowItWorks = () => {
       <div className="pipeline-works">
         {howItWorks.map((each, i) => (
           <div className="each-item" key={i}>
+            <img alt="Icon" src={require(`../../../../assets/image/${each.icon}`)}/>
             <div className="numeric-container">
               <hr/>
               <span className="numeric">
-                  <p>{i + 1}</p>
-                </span>
+                <p>{i + 1}</p>
+              </span>
             </div>
             <div className="text-container">
               <p className="item-header"><Translator id={each.header}/></p>

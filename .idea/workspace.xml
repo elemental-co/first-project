@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52205d77-c9ab-4392-a191-7ffd0fa4e62a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/homeAbout3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homeAbout3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/homeAbout5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homeAbout5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/HowItWorks/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/HowItWorks/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/HowItWorks/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/HowItWorks/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/AboutUs/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +112,9 @@
       <workItem from="1572237799444" duration="195000" />
       <workItem from="1572514754515" duration="6069000" />
       <workItem from="1572531397583" duration="1000" />
-      <workItem from="1572538762474" duration="2473000" />
+      <workItem from="1572538762474" duration="2654000" />
+      <workItem from="1572593978417" duration="225000" />
+      <workItem from="1572665530373" duration="2607000" />
     </task>
     <servers />
   </component>

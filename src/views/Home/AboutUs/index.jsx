@@ -7,6 +7,14 @@ import AlternativeDataV2 from "./AlternativeDataV2";
 import HowItWorks from "./HowItWorks";
 
 const CreditScoring = () => {
+  const whoWeAre = {
+    top: ["home.whoWeAre.content[0]", "home.whoWeAre.content[1]", "home.whoWeAre.content[2]", "home.whoWeAre.content[3]"],
+    bottom: [
+      {header: "home.whoWeAre.point1.header", icon: "alt-data-1.svg", content: "home.whoWeAre.point1.content"},
+      {header: "home.whoWeAre.point2.header", icon: "alt-data-2.svg", content: "home.whoWeAre.point2.content"},
+      {header: "home.whoWeAre.point3.header", icon: "alt-data-3.svg", content: "home.whoWeAre.point3.content"}
+    ]
+  };
   const [screenResolution, setScreenResolution] = useState(null);
   new ResizeSensor(document.getElementsByTagName("html")[0], () => {
     setScreenResolution(window.innerWidth);
@@ -16,24 +24,16 @@ const CreditScoring = () => {
       <div className="who-are-we">
         <div className="top">
           <p><Translator id="home.whoWeAre.header"/></p>
-          <p><Translator id="home.whoWeAre.content[0]"/></p>
-          <p><Translator id="home.whoWeAre.content[1]"/></p>
-          <p><Translator id="home.whoWeAre.content[2]"/></p>
-          <p><Translator id="home.whoWeAre.content[3]"/></p>
+          {whoWeAre.top.map((each, i) => <p key={i}><Translator id={each}/></p>)}
         </div>
         <div className="bottom">
-          <div className="each-point">
-            <p><Translator id="home.whoWeAre.point1.header"/></p>
-            <p><Translator id="home.whoWeAre.point1.content"/></p>
-          </div>
-          <div className="each-point">
-            <p><Translator id="home.whoWeAre.point2.header"/></p>
-            <p><Translator id="home.whoWeAre.point2.content"/></p>
-          </div>
-          <div className="each-point">
-            <p><Translator id="home.whoWeAre.point3.header"/></p>
-            <p><Translator id="home.whoWeAre.point3.content"/></p>
-          </div>
+          {whoWeAre.bottom.map((each, i) => (
+            <div className="each-point" key={i}>
+              <img alt="Icon" src={require(`../../../assets/image/${each.icon}`)}/>
+              <p><Translator id={each.header}/></p>
+              <p><Translator id={each.content}/></p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="what-we-do" id="home-what-we-do">

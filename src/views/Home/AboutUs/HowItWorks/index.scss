@@ -55,17 +55,14 @@
 				&:nth-child(1) .numeric-container hr {
 					right: 0;
 				}
-				&::before {
+				img {
 					top: 0;
 					left: 0;
 					right: 0;
-					content: "";
 					margin: auto;
 					width: $size;
 					height: $size;
 					position: absolute;
-					border-radius: 50%;
-					background-color: #E0E0E0;
 				}
 				&:last-child {
 					margin-bottom: 0;
@@ -145,7 +142,7 @@
 					display: flex;
 					max-width: none;
 					margin-bottom: 16px;
-					&::before {
+					img {
 						display: none;
 					}
 					&:last-child .numeric-container::before {
