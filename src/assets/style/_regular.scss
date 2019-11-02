@@ -1,11 +1,13 @@
 $mobile: 425px;
 $tablet: 768px;
 $desktop-sm: 1024px;
+$desktop-md: 1366px;
 $desktop-lg: 1440px;
 
 :export {
 	mobile: $mobile;
 	tablet: $tablet;
 	desktopSm: $desktop-sm;
+	desktopMd: $desktop-md;
 	desktopLg: $desktop-lg;
 }

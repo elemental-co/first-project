@@ -1,40 +1,45 @@
 {
   "text": {
-    "phone": "Telepon",
+    "phone": "Phone",
     "email": "Email",
-    "address": "Alamat"
+    "address": "Address"
   },
   "button": {
     "contact": "Contact Us",
     "learn": "Learn More"
   },
   "home": {
-    "home": "Beranda",
+    "home": "Home",
     "contextMenu": {
       "whoWeAre": "Who We Are?",
       "whatWeDo": "What We Do?"
     },
-    "paas": "Profiling as a Service",
-    "transform": "Transforming Underwriting Process with Big Data and A.I.",
-    "desc": "Acura Labs helps financial institutions by providing reliable information for better financial decisions",
-    "navbar1": "Who We Are?",
-    "navbar2": "What We Do?",
+    "paas": "Profiling & Credit Scoring as a Service",
+    "transform": "Transforming Underwriting Process with Big Data and Artificial Intelligence",
+    "desc": "Acura Labs helps financial institutions by providing access \nto alternative data for better financial decisions",
+    "navbar0": "Home",
+    "navbar1": "About Us",
+    "navbar2": "Our Services",
     "whoWeAre": {
       "header": "Acura Labs Mission",
       "content": ["We’ve always been", "on a mission to expand", "financial inclusion", "in Indonesia"],
       "point1": {
         "header": "Alternative Data",
-        "content": "Low penetration of bank financial product is caused by the lack of data coverage, and we are here to start increasing it."
+        "content": "Low penetration of financial products are caused by the lack of data coverage, and we are here to help."
       },
       "point2": {
         "header": "Automated Process",
-        "content": "Empowering bank in having automated know-your-customer and application process."
+        "content": "Empowering financial institutions\n to shorten approval time."
+      },
+      "point3": {
+        "header": "Credit Scoring",
+        "content": "Leveraging credit history and alternative data in an easy-to-use scoring system."
       }
     },
     "aboutUs": {
       "intro": "Digitizing Application Process",
       "title": "We Work with User Privacy in Mind",
-      "subtitle": "We respect the privacy by having one time only access after the user gave their consent and not storing their password.",
+      "subtitle": "We respect the user privacy by having one-time-only access after the user has given their consent and \nnot storing their user credentials password.",
       "point1": {
         "header": "Application",
         "content": "User will be asked to connect their digital accounts & giving consent for us to access."
@@ -49,45 +54,100 @@
       },
       "whatWeDo": {
         "header": "Acura Labs Services",
-        "subtitle": ["Secure, Reliable, and Cheap", "Credit Risk Management for Companies"],
+        "subtitle": ["Secure and Reliable Credit Risk", "Management for Financial Institutions"],
         "point1": {
-          "header": "Capturing Alternative Data",
-          "content": "We capture alternative data and used machine learning to reach the underserved market."
+          "header": "Profiling Services",
+          "content": "Providing access to alternative data and using machine learning algorithm to reach the underserved market."
         },
         "point2": {
-          "header": "Digitizing KYC & \nApplication Process",
-          "content": "We automate the verification of personal information, address, and income."
+          "header": "Credit Score Development",
+          "content": "Developing credit scoring system with a strong foundation of credit history and alternative data to better measure the risks of your customers."
+        }
+      }
+    },
+    "creditScoring": {
+      "intro": "Credit Score Development",
+      "title": "Machine Learning Techniques & Big Data for Predictive Credit Score",
+      "subtitle": "Our credit scoring system combines the conventional credit history and alternative data to have a 360 customer’s view to accurately predict the risk profile of an incoming loan application",
+      "point1": {
+        "header": "Application",
+        "content": "User will be asked to connect their digital accounts & giving consent for us to access."
+      },
+      "point2": {
+        "header": "Data Processing",
+        "content": "Then Acura Labs will processes the data and generate reports for respective partner."
+      },
+      "point3": {
+        "header": "Approval",
+        "content": "Based on the generated reports, you can use it for loan underwriting and approval decision."
+      },
+      "whatWeDo": {
+        "header": "Acura Labs Services",
+        "subtitle": ["Secure and Reliable Credit Risk", "Management for Financial Institutions"],
+        "point1": {
+          "header": "Profiling Services",
+          "content": "Providing access to alternative data and using machine learning algorithm to reach the underserved market."
+        },
+        "point2": {
+          "header": "Credit Score Development",
+          "content": "Developing credit scoring system with a strong foundation of credit history and alternative data to better measure the risks of your customers."
         }
       }
     },
     "alternativeData": {
       "header": "Capturing Alternative Data",
       "title": "Alternative Data for Better Financial Decision",
-      "subtitle": "Our data layer engine help financial institutions and business partners to reduce risk by providing individuals daily transactional data",
+      "subtitle": "Our data layer engine helps financial institutions and business partners to leverage alternative data, with the user’s consent, for making credit decisions",
       "capturedData": "Captured Data",
-      "point1": {
-        "header": "Banking",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      "version1": {
+        "point1": {
+          "header": "Banking",
+          "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        },
+        "point2": {
+          "header": "Riding",
+          "content": "Customer Info, Transaction Details, Go-Pay History, Bank Account Registered, Go-Points"
+        },
+        "point3": {
+          "header": "Shopping",
+          "content": "Transaction Details, Payment Method, Shipping Address, Bank Account Registered, Rating/Review/Comment"
+        },
+        "point4": {
+          "header": "Traveling",
+          "content": "Flight Info, Hotel Info, Payment Method, Traveloka Pay, Points & Rewards"
+        },
+        "point5": {
+          "header": "Many More...",
+          "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+        }
       },
-      "point2": {
-        "header": "Riding",
-        "content": "Customer Info, Transaction Details, Go-Pay History, Bank Account Registered, Go-Points"
-      },
-      "point3": {
-        "header": "Shopping",
-        "content": "Transaction Details, Payment Method, Shipping Address, Bank Account Registered, Rating/Review/Comment"
-      },
-      "point4": {
-        "header": "Traveling",
-        "content": "Flight Info, Hotel Info, Payment Method, Traveloka Pay, Points & Rewards"
-      },
-      "point5": {
-        "header": "Many More...",
-        "content": "Balance, Income, Transaction Detail, Transfer List, Credit Card Information"
+      "version2": {
+        "subtitleHeader": "Captured Data",
+        "point1": {
+          "header": "Financial Institutions Accounts",
+          "content": "Account Information, Transaction Details, etc."
+        },
+        "point2": {
+          "header": "E-Wallet Accounts",
+          "content": "Account Information, Transaction Details, etc."
+        },
+        "point3": {
+          "header": "E-Commerce Accounts",
+          "content": "Account Information, Payment Method, Shipping Address, etc."
+        },
+        "point4": {
+          "header": "Ride Hailing Account",
+          "content": "Customer Information, Transaction Details, Ride History, etc."
+        },
+        "point5": {
+          "header": "Online Travel Agent",
+          "content": "Customer Information, Transaction Details, Flight & Hotel Details, etc."
+        },
+        "point6": "And many more..."
       }
     },
     "contactUs": {
-      "intro": "Customer? Press? Partner?",
+      "intro": "Contact Us",
       "title": "We’d Love to Hear from You!",
       "name": "Your Name",
       "email": "Your Email",
@@ -96,6 +156,6 @@
     }
   },
   "footer": {
-    "copyright": "Monitored regularly by Otoritas Jasa Keuangan"
+    "copyright": "Recorded in Otoritas Jasa Keuangan with registration number\nS-84/MS.72/2019 under POJK 13/2018."
   }
 }

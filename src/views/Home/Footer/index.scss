@@ -2,7 +2,7 @@
 
 @mixin footer-container {
 	.footer-container {
-		background-color: #313895;
+		background-color: #2C4EA2;
 		.footer-content {
 			width: 100%;
 			margin: auto;
@@ -18,8 +18,10 @@
 				img {
 					display: block;
 				}
-				p {
+				p, a {
 					margin: 0;
+					display: block;
+					text-decoration: none;
 					font-family: "SF Compact Text Regular", sans-serif;
 				}
 				.logo {
@@ -37,21 +39,20 @@
 					line-height: 140%;
 					font-weight: bold;
 				}
-				.sitemap {
-					margin-top: 64px;
-					p {
-						color: #ffffff;
-						font-size: 16px;
-						cursor: pointer;
-						line-height: 140%;
-						&:nth-child(2) {
-							margin: 16px 0;
-						}
+				.sitemap p {
+					color: #ffffff;
+					font-size: 16px;
+					cursor: pointer;
+					line-height: 140%;
+					&:nth-child(2) {
+						margin: 16px 0;
 					}
 				}
 				.copyright {
 					font-size: 16px;
 					margin-top: 64px;
+					max-width: 590px;
+					line-height: 140%;
 					color: rgba(255, 255, 255, 0.5);
 				}
 			}
@@ -64,7 +65,7 @@
 			flex-direction: column;
 			.left, .center, .right {
 				margin-right: 0;
-				p {
+				p, a {
 					text-align: center;
 				}
 				img {
@@ -79,17 +80,15 @@
 					margin: 80px 0 40px 0;
 					justify-content: center;
 					p {
+						margin: 0 8px;
 						display: block;
 						font-size: 16px;
 						font-family: "SF Compact Text Regular", sans-serif;
 						&:first-child {
-							margin-right: 8px;
-						}
-						&:nth-child(2) {
-							margin: 0 8px;
+							margin-left: 0;
 						}
 						&:last-child {
-							margin-left: 8px;
+							margin-right: 0;
 						}
 					}
 				}

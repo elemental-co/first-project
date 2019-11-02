@@ -9,23 +9,23 @@ const AlternativeData = () => {
   const [tabs, updateTab] = useState([
     {id: "banking", label: "home.alternativeData.point1.header", value: true, content: {
         logo: ["grayscale-bca.svg", "grayscale-mandiri.svg", "grayscale-ovo.svg", "grayscale-bri.svg"],
-        text: "home.alternativeData.point1.content"
+        text: "home.alternativeData.version1.point1.content"
       }},
     {id: "riding", label: "home.alternativeData.point2.header", value: false, content: {
         logo: ["grayscale-gojek.svg", "grayscale-grab.svg"],
-        text: "home.alternativeData.point2.content"
+        text: "home.alternativeData.version1.point2.content"
       }},
     {id: "shopping", label: "home.alternativeData.point3.header", value: false, content: {
         logo: ["grayscale-tokopedia.svg", "grayscale-bukalapak.svg", "grayscale-shopee.svg"],
-        text: "home.alternativeData.point3.content"
+        text: "home.alternativeData.version1.point3.content"
       }},
     {id: "traveling", label: "home.alternativeData.point4.header", value: false, content: {
         logo: ["grayscale-traveloka.svg"],
-        text: "home.alternativeData.point4.content"
+        text: "home.alternativeData.version1.point4.content"
       }},
     {id: "others", label: "home.alternativeData.point5.header", value: null, content: {
         logo: [],
-        text: "home.alternativeData.point5.content"
+        text: "home.alternativeData.version1.point5.content"
       }},
   ]);
   const selectTabHandler = obj => {
@@ -62,6 +62,9 @@ const AlternativeData = () => {
             <div className={activeTab.content.logo.length <= 2 ? "tab-content content-sm" : "tab-content"}>
               <div className="services">
                 <div className="images">
+                  <div className="separator">
+                    {activeTab.content.logo.slice(1).map(i => <hr key={i}/>)}
+                  </div>
                   {activeTab.content.logo.map((each, i) => {
                     return (
                       <div key={i} image-width={`1/${activeTab.content.logo.length}`}>

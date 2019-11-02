@@ -1,7 +1,8 @@
 import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
-import {mobile, tablet, desktopLg} from "../../../assets/style/_regular.scss";
+import {tablet, desktopMd} from "../../../assets/style/_regular.scss";
+import {scrollToElement} from "../../../helpers";
 import Translator from "Components/Translator";
 
 const Header = () => {
@@ -11,30 +12,30 @@ const Header = () => {
     setScreenResolution(window.innerWidth);
   });
   const toggleContextMenu = () => {
-    if(contextMenuState){
-      document.getElementsByTagName("html")[0].removeAttribute("style");
-    }else{
-      document.getElementsByTagName("html")[0].style.overflow = "hidden";
-    }
-    setContextMenuState(!contextMenuState);
+    return new Promise(resolve => {
+      if(contextMenuState){
+        document.getElementsByTagName("html")[0].removeAttribute("style");
+      }else{
+        scrollToElement(null, {duration: 500});
+        document.getElementsByTagName("html")[0].style.overflow = "hidden";
+      }
+      setContextMenuState(!contextMenuState);
+      setTimeout(() => resolve(), 300);
+    });
   };
   const contextClassname = contextMenuState ? {style: {opacity: 1, visibility: "visible"}} : {};
+  const navbarStyleGuide = contextMenuState ? {style: {backgroundColor: "#FFFFFF"}} : {};
   return(
     <div className="header-container">
-      <nav className="navigation-bar">
+      <nav className="navigation-bar" {...navbarStyleGuide}>
         <span className="navigation-bar-extend logo-container-extend"/>
         <div className="navigation-bar-main">
-          <span className="logo-container"/>
           <div className="navigation-bar-item">
-            {screenResolution <= parseInt(mobile) ? (
-              <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader6.svg")}/>
-            ) : (
-              <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
-            )}
+            <img className="brand-logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
             <div className="right">
               {screenResolution <= parseInt(tablet) ? (
                 <Fragment>
-                  <button className="icon-button">
+                  <button name="contact-us-link" onClick={scrollToElement} className="icon-button">
                     <img alt="Icon" src={require("../../../assets/image/homeHeader7.svg")}/>
                   </button>
                   <button className="icon-button" onClick={toggleContextMenu}>
@@ -47,9 +48,9 @@ const Header = () => {
                 </Fragment>
               ) : (
                 <Fragment>
-                  <p><Translator id="home.navbar1"/></p>
-                  <p><Translator id="home.navbar2"/></p>
-                  <button className="contact-button">
+                  <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
+                  <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
+                  <button name="contact-us-link" onClick={scrollToElement} className="contact-button">
                     <Translator id="button.contact"/>
                   </button>
                 </Fragment>
@@ -63,9 +64,13 @@ const Header = () => {
         ? (
           <div className="mobile-context-menu" {...contextClassname}>
             <div className="context-content">
-              <p><Translator id="home.contextMenu.whoWeAre"/></p>
+              <p onClick={() => toggleContextMenu().then(() => scrollToElement("who-we-are-link"))}>
+                <Translator id="home.navbar1"/>
+              </p>
               <hr/>
-              <p><Translator id="home.contextMenu.whatWeDo"/></p>
+              <p onClick={() => toggleContextMenu().then(() => scrollToElement("what-we-do-link"))}>
+                <Translator id="home.navbar2"/>
+              </p>
             </div>
             <span className="foreground-layer" onClick={toggleContextMenu}/>
           </div>
@@ -77,15 +82,17 @@ const Header = () => {
             <p><Translator id="home.transform"/></p>
             <p><Translator id="home.desc"/></p>
             <div className="button-container">
-              <button>
+              <button name="who-we-are-link" onClick={scrollToElement}>
                 <Translator id="button.learn"/>
               </button>
               <img alt="Illustration" src={require("../../../assets/image/homeHeader5.svg")}/>
             </div>
           </div>
-          {screenResolution >= parseInt(desktopLg)
-            ? <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
-            : null}
+          {screenResolution ?
+            screenResolution >= parseInt(desktopMd)
+              ? <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader1.svg")}/>
+              : <img alt="Illustration" className="header-illustration" src={require("../../../assets/image/homeHeader8.svg")}/>
+          : null}
         </div>
       </div>
     </div>

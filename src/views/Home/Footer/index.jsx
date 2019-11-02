@@ -2,6 +2,7 @@ import React, {Fragment, useState} from "react";
 import {ResizeSensor} from "css-element-queries";
 
 import {tablet} from "../../../assets/style/_regular.scss";
+import {scrollToElement} from "../../../helpers";
 import Translator from "Components/Translator";
 
 const Footer = () => {
@@ -13,23 +14,20 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="left">
-          <p className="footer-title"><Translator id="text.phone"/></p>
-          <p className="footer-text">+62 812 0000 0000</p>
-          <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
             <div className="sitemap">
-              <p><Translator id="home.home"/></p>
-              <p><Translator id="home.navbar1"/></p>
-              <p><Translator id="home.navbar2"/></p>
+              <p name="home-link" onClick={scrollToElement}><Translator id="home.navbar0"/></p>
+              <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
+              <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
             </div>
           ) : null}
         </div>
         <div className="center">
           <p className="footer-title"><Translator id="text.email"/></p>
-          <p className="footer-text">hello@acuralabs.ai</p>
+          <a href="mailto:admin@acuralabs.ai" className="footer-text">admin@acuralabs.ai</a>
           <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
-            <img className="logo" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
+            <img className="logo" alt="Logo" src={require("../../../assets/image/homeHeader9.svg")}/>
           ) : null}
         </div>
         <div className="right">
@@ -39,13 +37,13 @@ const Footer = () => {
           {screenResolution <= parseInt(tablet) ? (
             <Fragment>
               <div className="sitemap-small">
-                <p><Translator id="home.home"/></p>
+                <p name="home-link" onClick={scrollToElement}><Translator id="home.navbar0"/></p>
                 &bull;
-                <p><Translator id="home.navbar1"/></p>
+                <p name="who-we-are-link" onClick={scrollToElement}><Translator id="home.navbar1"/></p>
                 &bull;
-                <p><Translator id="home.navbar2"/></p>
+                <p name="what-we-do-link" onClick={scrollToElement}><Translator id="home.navbar2"/></p>
               </div>
-              <img className="logo-small" alt="Logo" src={require("../../../assets/image/homeHeader3.svg")}/>
+              <img className="logo-small" alt="Logo" src={require("../../../assets/image/homeHeader9.svg")}/>
             </Fragment>
           ) : null}
           <p className="copyright">&copy; {new Date().getFullYear()}. <Translator id="footer.copyright"/></p>
