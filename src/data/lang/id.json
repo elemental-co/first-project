@@ -21,7 +21,7 @@
     "navbar1": "About Us",
     "navbar2": "Our Services",
     "whoWeAre": {
-      "header": "Acura Labs Mission",
+      "header": "Our Passion",
       "content": ["We’ve always been", "on a mission to expand", "financial inclusion", "in Indonesia"],
       "point1": {
         "header": "Alternative Data",
@@ -46,7 +46,7 @@
       },
       "point2": {
         "header": "Data Processing",
-        "content": "Then Acura Labs will processes the data and generate reports for respective partner."
+        "content": "Then Acura Labs will process the data and generate reports for respective partner."
       },
       "point3": {
         "header": "Approval",
