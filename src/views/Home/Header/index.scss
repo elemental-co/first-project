@@ -254,11 +254,14 @@
 				position: absolute;
 			}
 		}
+		@media only screen and (min-width: $desktop-sm + 1px) {
+			.header-content-main .header-illustration {
+				top: 0;
+			}
+		}
 		@media only screen and (max-width: $desktop-sm) {
-			.header-content-main {
-				.header-illustration {
-					display: none;
-				}
+			.header-content-main .header-illustration {
+				display: none;
 			}
 		}
 		@media only screen and (max-width: $tablet) {
