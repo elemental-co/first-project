@@ -254,7 +254,7 @@
 				position: absolute;
 			}
 		}
-		@media only screen and (min-width: $desktop-sm + 1px) {
+		@media only screen and (max-width: $desktop-md) {
 			.header-content-main .header-illustration {
 				top: 0;
 				right: 5vw;
@@ -262,6 +262,7 @@
 		}
 		@media only screen and (max-width: $desktop-sm) {
 			.header-content-main .header-illustration {
+				top: -120px;
 				display: none;
 			}
 		}
