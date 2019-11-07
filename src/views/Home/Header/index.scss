@@ -194,7 +194,7 @@
 				width: 100%;
 				display: flex;
 				max-width: 660px;
-				margin-top: 60px;
+				margin-top: 24px;
 				margin-left: 105px;
 				position: relative;
 				padding-bottom: 40px;
@@ -254,11 +254,16 @@
 				position: absolute;
 			}
 		}
+		@media only screen and (max-width: $desktop-md) {
+			.header-content-main .header-illustration {
+				top: 0;
+				right: 5vw;
+			}
+		}
 		@media only screen and (max-width: $desktop-sm) {
-			.header-content-main {
-				.header-illustration {
-					display: none;
-				}
+			.header-content-main .header-illustration {
+				top: -120px;
+				display: none;
 			}
 		}
 		@media only screen and (max-width: $tablet) {
