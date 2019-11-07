@@ -12,6 +12,6 @@ app.get("/", (req, res) => res.send({
 }));
 app.use("/mail", require("./routes/mail"));
 
-const listener = app.listen(process.env.PORT || '8000',() => {
+const listener = app.listen(process.env.PORT || '8002',() => {
   console.log(`Server started at port ${listener.address().port}`);
 });
