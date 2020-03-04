@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="center">
           <p className="footer-title"><Translator id="text.email"/></p>
-          <a href="mailto:admin@acuralabs.ai" className="footer-text">admin@acuralabs.ai</a>
+          <a href="mailto:admin@acuralabs.ai" className="footer-text" style={{marginBottom: '40px'}}>admin@acuralabs.ai</a>
           <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution > parseInt(tablet) ? (
             <img className="logo" alt="Logo" src={require("../../../assets/image/homeHeader9.svg")}/>
@@ -32,7 +32,8 @@ const Footer = () => {
         </div>
         <div className="right">
           <p className="footer-title"><Translator id="text.address"/></p>
-          <p className="footer-text">Revenue Tower, 26th Floor, #132, SCBD, South Jakarta 12190</p>
+          <p className="footer-text" style={{marginBottom: 0}}>Lippo Kuningan 20th Floor</p>
+          <p className="footer-text" style={{marginTop: 0}}>Jl. HR. Rasuna Said Kav. B-12 Setiabudi, Jakarta 12940 Indonesia</p>
           <img alt="Pattern" src={require("../../../assets/image/homeFooter1.svg")}/>
           {screenResolution <= parseInt(tablet) ? (
             <Fragment>
